@@ -7,9 +7,9 @@ const villes = [
   { nom: 'Vevey', population: 19827 },
 ]
 
-const nomsDesVilles = villes.map(ville => ville.nom)
+const nomsDesVilles = villes.map(ville => ville.nom);
 
-console.log('Noms des villes', nomsDesVilles)
+console.log('Noms des villes', nomsDesVilles);
 
 /*
 [
@@ -22,9 +22,9 @@ console.log('Noms des villes', nomsDesVilles)
 ]
 */
 
-const villesDePlusDe30000Habitants = villes.filter(ville => ville.population > 30000)
+const villesDePlusDe30000Habitants = villes.filter(ville => ville.population > 30000);
 
-console.log('Ville de plus de 30000 habitants', villesDePlusDe30000Habitants)
+console.log('Ville de plus de 30000 habitants', villesDePlusDe30000Habitants);
 
 /*
 [
@@ -39,18 +39,18 @@ console.log('Ville de plus de 30000 habitants', villesDePlusDe30000Habitants)
   ]
 */
 
-const estYverdon = ville => ville.nom === "Yverdon"
-const habitantsYverdon = villes.find(estYverdon).population
+const estYverdon = ville => ville.nom === "Yverdon";
+const habitantsYverdon = villes.find(estYverdon).population;
 
-console.log('Nombre d\'habitants à Yverdon', habitantsYverdon)
+console.log('Nombre d\'habitants à Yverdon', habitantsYverdon);
 
 // 30143
 
 const sommeHabitants = villes
   .map(ville => ville.population)
-  .reduce((result, pop)=> result + pop, 0)
+  .reduce((result, pop)=> result + pop, 0);
 
-console.log('Nombre total d\'habitants', sommeHabitants)
+console.log('Nombre total d\'habitants', sommeHabitants);
 
 // 257018
 

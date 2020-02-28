@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div></div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script>
+        const DATA = [3, 8, 1, 9]
+
+        const div = d3.select('div');
+
+        div.append('h1').text('Titre');
+
+        div.selectAll('p')
+            .data(DATA).enter()
+            .append('p')
+            .text(d => `valeur: ${d}`)//rajoute un paragraphe
+            .attr('id', d => `id: ${d}`)
+            .style('color', d => d > 5 ? 'red': 'green')
+        console.log(div);
+    </script>
+
+</body>
+<script src="index.js"></script>
+
+</html>

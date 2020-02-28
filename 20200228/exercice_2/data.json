@@ -1,0 +1,90 @@
+[
+  {
+    "pays": "Suisse(A)",
+    "taux": 31.4
+  },
+  {
+    "pays": "Suisse(F)",
+    "taux": 27.4
+  },
+  {
+    "pays": "Suisse(I)",
+    "taux": 31.1
+  },
+  {
+    "pays": "Autriche",
+    "taux": 32.9
+  },
+  {
+    "pays": "Belgique(Fla)",
+    "taux": 37.1
+  },
+  {
+    "pays": "Belgique(Fr)",
+    "taux": 23.2
+  },
+  {
+    "pays": "Bulgarie",
+    "taux": 5.5
+  },
+  {
+    "pays": "Danemark",
+    "taux": 74.6
+  },
+  {
+    "pays": "Finlande",
+    "taux": 43.3
+  },
+  {
+    "pays": "France",
+    "taux": 30.6
+  },
+  {
+    "pays": "Allemagne",
+    "taux": 46.4
+  },
+  {
+    "pays": "Hongrie",
+    "taux": 15.1
+  },
+  {
+    "pays": "Italie",
+    "taux": 36.7
+  },
+  {
+    "pays": "Pays-Bas",
+    "taux": 31.6
+  },
+  {
+    "pays": "Norvège",
+    "taux": 40.5
+  },
+  {
+    "pays": "Pologne",
+    "taux": 28
+  },
+  {
+    "pays": "Portugal",
+    "taux": 15.2
+  },
+  {
+    "pays": "Slovaquie",
+    "taux": 13.9
+  },
+  {
+    "pays": "Slovénie",
+    "taux": 22.4
+  },
+  {
+    "pays": "Espagne",
+    "taux": 24
+  },
+  {
+    "pays": "Suède",
+    "taux": 37
+  },
+  {
+    "pays": "Grande-Bretagne",
+    "taux": 47.2
+  }
+]

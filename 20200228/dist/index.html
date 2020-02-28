@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div></div>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script>var DATA = [3, 8, 1, 9];
+var div = d3.select('div');
+div.append('h1').text('Titre');
+div.selectAll('p').data(DATA).enter().append('p').text(function (d) {
+  return "valeur: ".concat(d);
+}) //rajoute un paragraphe
+.attr('id', function (d) {
+  return "id: ".concat(d);
+}).style('color', function (d) {
+  return d > 5 ? 'red' : 'green';
+});
+console.log(div);</script>
+
+</body>
+<script src="/src.e31bb0bc.js"></script>
+
+</html>

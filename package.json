@@ -1,0 +1,28 @@
+{
+  "name": "visualdon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "batons:dev": "parcel 20200228/src/index.html --out-dir 20200228/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AudilaraZ/VisualDon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AudilaraZ/VisualDon/issues"
+  },
+  "homepage": "https://github.com/AudilaraZ/VisualDon#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "billboard": "^1.0.0",
+    "d3": "^5.15.0"
+  }
+}
