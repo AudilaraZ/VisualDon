@@ -4,3 +4,5 @@
 **/._.DS_Store
 VisualDon.docx
 20200228/.cache
+**/dist
+.cache
