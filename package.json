@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "batons:dev": "parcel 20200228/src/index.html --out-dir 20200228/dist",
     "batons2:dev": "parcel 20200306/batons_suite/src/index.html --out-dir 20200306/batons_suite/dist",
-    "batons3:dev": "parcel 20200228/exercice_3/index.html --out-dir 20200228/exercice_3/dist"
+    "batons3:dev": "parcel 20200228/exercice_3/index.html --out-dir 20200228/exercice_3/dist",
+    "pie:dev": "parcel 20200306/exercice_2/src/index.html --out-dir 20200306/exercice_2/dist"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,8 @@
   },
   "dependencies": {
     "billboard": "^1.0.0",
-    "d3": "^5.15.0"
+    "d3": "^5.15.0",
+    "node-fetch": "^2.6.0",
+    "ramda": "^0.27.0"
   }
 }
