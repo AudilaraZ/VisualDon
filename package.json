@@ -27,6 +27,8 @@
   "dependencies": {
     "billboard": "^1.0.0",
     "d3": "^5.15.0",
+    "leaflet": "^1.6.0",
+    "leaflet-defaulticon-compatibility": "^0.1.1",
     "node-fetch": "^2.6.0",
     "ramda": "^0.27.0"
   }
