@@ -8,7 +8,8 @@
     "batons:dev": "parcel 20200228/src/index.html --out-dir 20200228/dist",
     "batons2:dev": "parcel 20200306/batons_suite/src/index.html --out-dir 20200306/batons_suite/dist",
     "batons3:dev": "parcel 20200228/exercice_3/index.html --out-dir 20200228/exercice_3/dist",
-    "pie:dev": "parcel 20200306/exercice_2/src/index.html --out-dir 20200306/exercice_2/dist"
+    "pie:dev": "parcel 20200306/exercice_2/src/index.html --out-dir 20200306/exercice_2/dist",
+    "carte:dev": "parcel 20200403/src/index.html --out-dir 20200403/dist"
   },
   "repository": {
     "type": "git",
