@@ -5,7 +5,7 @@ import 'leaflet-defaulticon-compatibility'
 import properties from './fastfood.json'
 
 // initialiser la carte, ici "carte" est l'id de la <div> de notre index.html
-const map = L.map('carte')
+const map = L.map('map')
 
 // le fond de carte, ici nous utilisons celles de openstreetmap.ch
 const fondDeCarte = L.tileLayer('https://tile.osm.ch/switzerland/{z}/{x}/{y}.png', {
