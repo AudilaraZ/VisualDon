@@ -2,10 +2,10 @@ import L from 'leaflet'
 import 'leaflet-defaulticon-compatibility'
 
 // les fast-food à Sainte-Croix
-import fast_foodGeojson from 'fast_food.json'
+import properties from './fastfood.json'
 
 // initialiser la carte, ici "carte" est l'id de la <div> de notre index.html
-const map = L.map('carte')
+const map = L.map('map')
 
 // le fond de carte, ici nous utilisons celles de openstreetmap.ch
 const fondDeCarte = L.tileLayer('https://tile.osm.ch/switzerland/{z}/{x}/{y}.png', {
@@ -18,7 +18,7 @@ const fondDeCarte = L.tileLayer('https://tile.osm.ch/switzerland/{z}/{x}/{y}.png
 fondDeCarte.addTo(map)
 
 // la couche avec les fast-food
-const coucheFastFood = L.geoJSON(fast_foodGeojson)
+const coucheFastFood = L.geoJSON(properties)
 
 // ajouter la couche à "map"
 coucheFastFood.addTo(map)
