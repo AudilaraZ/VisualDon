@@ -1,0 +1,926 @@
+[
+  {
+    "pays": "﻿Afghanistan",
+    "morts": 0.683062376
+  },
+  {
+    "pays": "Albania",
+    "morts": 0.437420501
+  },
+  {
+    "pays": "Algeria",
+    "morts": 0.332952904
+  },
+  {
+    "pays": "American Samoa",
+    "morts": 0.676749698
+  },
+  {
+    "pays": "Andean Latin America",
+    "morts": 1.789477826
+  },
+  {
+    "pays": "Andorra",
+    "morts": 1.548766846
+  },
+  {
+    "pays": "Angola",
+    "morts": 1.591525063
+  },
+  {
+    "pays": "Antigua and Barbuda",
+    "morts": 6.237552965
+  },
+  {
+    "pays": "Argentina",
+    "morts": 1.705537993
+  },
+  {
+    "pays": "Armenia",
+    "morts": 1.532459302
+  },
+  {
+    "pays": "Australasia",
+    "morts": 1.6922155
+  },
+  {
+    "pays": "Australia",
+    "morts": 1.80932285
+  },
+  {
+    "pays": "Austria",
+    "morts": 3.307956001
+  },
+  {
+    "pays": "Azerbaijan",
+    "morts": 3.459120231
+  },
+  {
+    "pays": "Bahamas",
+    "morts": 5.040807137
+  },
+  {
+    "pays": "Bahrain",
+    "morts": 0.689316208
+  },
+  {
+    "pays": "Bangladesh",
+    "morts": 0.184877962
+  },
+  {
+    "pays": "Barbados",
+    "morts": 1.747775196
+  },
+  {
+    "pays": "Belarus",
+    "morts": 19.49167062
+  },
+  {
+    "pays": "Belgium",
+    "morts": 2.956368527
+  },
+  {
+    "pays": "Belize",
+    "morts": 3.553495449
+  },
+  {
+    "pays": "Benin",
+    "morts": 2.445825735
+  },
+  {
+    "pays": "Bermuda",
+    "morts": 0.920696122
+  },
+  {
+    "pays": "Bhutan",
+    "morts": 1.646354109
+  },
+  {
+    "pays": "Bolivia",
+    "morts": 3.243133933
+  },
+  {
+    "pays": "Bosnia and Herzegovina",
+    "morts": 2.036536065
+  },
+  {
+    "pays": "Botswana",
+    "morts": 1.606033356
+  },
+  {
+    "pays": "Brazil",
+    "morts": 4.523351253
+  },
+  {
+    "pays": "Brunei",
+    "morts": 0.362097178
+  },
+  {
+    "pays": "Bulgaria",
+    "morts": 1.028816159
+  },
+  {
+    "pays": "Burkina Faso",
+    "morts": 2.683899523
+  },
+  {
+    "pays": "Burundi",
+    "morts": 2.409521925
+  },
+  {
+    "pays": "Cambodia",
+    "morts": 1.400671937
+  },
+  {
+    "pays": "Cameroon",
+    "morts": 2.635712223
+  },
+  {
+    "pays": "Canada",
+    "morts": 2.31808183
+  },
+  {
+    "pays": "Cape Verde",
+    "morts": 1.841065152
+  },
+  {
+    "pays": "Caribbean",
+    "morts": 3.066225555
+  },
+  {
+    "pays": "Central African Republic",
+    "morts": 2.088963129
+  },
+  {
+    "pays": "Central Asia",
+    "morts": 4.06066176
+  },
+  {
+    "pays": "Central Europe",
+    "morts": 4.42621902
+  },
+  {
+    "pays": "Central Europe, Eastern Europe, and Central Asia",
+    "morts": 9.599643411
+  },
+  {
+    "pays": "Central Latin America",
+    "morts": 3.521813793
+  },
+  {
+    "pays": "Central Sub-Saharan Africa",
+    "morts": 1.615204948
+  },
+  {
+    "pays": "Chad",
+    "morts": 1.764461951
+  },
+  {
+    "pays": "Chile",
+    "morts": 3.032238838
+  },
+  {
+    "pays": "China",
+    "morts": 1.102623507
+  },
+  {
+    "pays": "Colombia",
+    "morts": 0.225271778
+  },
+  {
+    "pays": "Comoros",
+    "morts": 1.807579193
+  },
+  {
+    "pays": "Congo",
+    "morts": 2.033114486
+  },
+  {
+    "pays": "Costa Rica",
+    "morts": 2.245190634
+  },
+  {
+    "pays": "Cote d'Ivoire",
+    "morts": 2.498241279
+  },
+  {
+    "pays": "Croatia",
+    "morts": 3.387685642
+  },
+  {
+    "pays": "Cuba",
+    "morts": 3.956026713
+  },
+  {
+    "pays": "Cyprus",
+    "morts": 0.530348691
+  },
+  {
+    "pays": "Czech Republic",
+    "morts": 2.884034335
+  },
+  {
+    "pays": "Democratic Republic of Congo",
+    "morts": 1.548280508
+  },
+  {
+    "pays": "Denmark",
+    "morts": 8.59231751
+  },
+  {
+    "pays": "Djibouti",
+    "morts": 2.311883372
+  },
+  {
+    "pays": "Dominica",
+    "morts": 5.677121648
+  },
+  {
+    "pays": "Dominican Republic",
+    "morts": 1.63461444
+  },
+  {
+    "pays": "East Asia",
+    "morts": 1.11131069
+  },
+  {
+    "pays": "Eastern Europe",
+    "morts": 14.32947089
+  },
+  {
+    "pays": "Eastern Sub-Saharan Africa",
+    "morts": 2.349058808
+  },
+  {
+    "pays": "Ecuador",
+    "morts": 2.738354717
+  },
+  {
+    "pays": "Egypt",
+    "morts": 0.246577408
+  },
+  {
+    "pays": "El Salvador",
+    "morts": 16.38353991
+  },
+  {
+    "pays": "England",
+    "morts": 2.502353801
+  },
+  {
+    "pays": "Equatorial Guinea",
+    "morts": 1.657794313
+  },
+  {
+    "pays": "Eritrea",
+    "morts": 3.635878775
+  },
+  {
+    "pays": "Estonia",
+    "morts": 12.11290494
+  },
+  {
+    "pays": "Ethiopia",
+    "morts": 1.86402799
+  },
+  {
+    "pays": "Fiji",
+    "morts": 0.226569532
+  },
+  {
+    "pays": "Finland",
+    "morts": 6.97948832
+  },
+  {
+    "pays": "France",
+    "morts": 3.701432818
+  },
+  {
+    "pays": "Gabon",
+    "morts": 2.074887804
+  },
+  {
+    "pays": "Gambia",
+    "morts": 1.986226634
+  },
+  {
+    "pays": "Georgia",
+    "morts": 1.431355128
+  },
+  {
+    "pays": "Germany",
+    "morts": 4.633635698
+  },
+  {
+    "pays": "Ghana",
+    "morts": 2.242903584
+  },
+  {
+    "pays": "Greece",
+    "morts": 0.243506743
+  },
+  {
+    "pays": "Greenland",
+    "morts": 12.43988909
+  },
+  {
+    "pays": "Grenada",
+    "morts": 3.077756343
+  },
+  {
+    "pays": "Guam",
+    "morts": 1.184662713
+  },
+  {
+    "pays": "Guatemala",
+    "morts": 12.66753919
+  },
+  {
+    "pays": "Guinea",
+    "morts": 1.968618649
+  },
+  {
+    "pays": "Guinea-Bissau",
+    "morts": 2.202784309
+  },
+  {
+    "pays": "Guyana",
+    "morts": 5.638378105
+  },
+  {
+    "pays": "Haiti",
+    "morts": 3.627278885
+  },
+  {
+    "pays": "High SDI",
+    "morts": 2.547829744
+  },
+  {
+    "pays": "High-income",
+    "morts": 2.383653292
+  },
+  {
+    "pays": "High-income Asia Pacific",
+    "morts": 0.647298913
+  },
+  {
+    "pays": "High-middle SDI",
+    "morts": 3.107054328
+  },
+  {
+    "pays": "Honduras",
+    "morts": 5.397523673
+  },
+  {
+    "pays": "Hungary",
+    "morts": 3.25720949
+  },
+  {
+    "pays": "Iceland",
+    "morts": 2.29544074
+  },
+  {
+    "pays": "India",
+    "morts": 2.318877548
+  },
+  {
+    "pays": "Indonesia",
+    "morts": 0.313556326
+  },
+  {
+    "pays": "Iran",
+    "morts": 0.329207094
+  },
+  {
+    "pays": "Iraq",
+    "morts": 0.24625281
+  },
+  {
+    "pays": "Ireland",
+    "morts": 1.601591207
+  },
+  {
+    "pays": "Israel",
+    "morts": 0.591714324
+  },
+  {
+    "pays": "Italy",
+    "morts": 0.389453041
+  },
+  {
+    "pays": "Jamaica",
+    "morts": 0.528828656
+  },
+  {
+    "pays": "Japan",
+    "morts": 0.427464599
+  },
+  {
+    "pays": "Jordan",
+    "morts": 0.266411272
+  },
+  {
+    "pays": "Kazakhstan",
+    "morts": 8.692704567
+  },
+  {
+    "pays": "Kenya",
+    "morts": 2.264358826
+  },
+  {
+    "pays": "Kiribati",
+    "morts": 0.456836921
+  },
+  {
+    "pays": "Kuwait",
+    "morts": 0.207385529
+  },
+  {
+    "pays": "Kyrgyzstan",
+    "morts": 6.847602891
+  },
+  {
+    "pays": "Laos",
+    "morts": 1.734428488
+  },
+  {
+    "pays": "Latin America and Caribbean",
+    "morts": 3.726099088
+  },
+  {
+    "pays": "Latvia",
+    "morts": 10.69072139
+  },
+  {
+    "pays": "Lebanon",
+    "morts": 0.328771104
+  },
+  {
+    "pays": "Lesotho",
+    "morts": 2.627486252
+  },
+  {
+    "pays": "Liberia",
+    "morts": 2.029731395
+  },
+  {
+    "pays": "Libya",
+    "morts": 0.596845204
+  },
+  {
+    "pays": "Lithuania",
+    "morts": 9.239072049
+  },
+  {
+    "pays": "Low SDI",
+    "morts": 1.703686677
+  },
+  {
+    "pays": "Low-middle SDI",
+    "morts": 2.394220553
+  },
+  {
+    "pays": "Luxembourg",
+    "morts": 3.038910223
+  },
+  {
+    "pays": "Macedonia",
+    "morts": 0.672135327
+  },
+  {
+    "pays": "Madagascar",
+    "morts": 1.955816277
+  },
+  {
+    "pays": "Malawi",
+    "morts": 2.713578899
+  },
+  {
+    "pays": "Malaysia",
+    "morts": 1.575910578
+  },
+  {
+    "pays": "Maldives",
+    "morts": 0.28142702
+  },
+  {
+    "pays": "Mali",
+    "morts": 1.274936104
+  },
+  {
+    "pays": "Malta",
+    "morts": 0.634974485
+  },
+  {
+    "pays": "Marshall Islands",
+    "morts": 1.495920149
+  },
+  {
+    "pays": "Mauritania",
+    "morts": 1.450852548
+  },
+  {
+    "pays": "Mauritius",
+    "morts": 4.650661538
+  },
+  {
+    "pays": "Mexico",
+    "morts": 3.971748466
+  },
+  {
+    "pays": "Micronesia (country)",
+    "morts": 1.140395757
+  },
+  {
+    "pays": "Middle SDI",
+    "morts": 1.649731878
+  },
+  {
+    "pays": "Moldova",
+    "morts": 9.292130082
+  },
+  {
+    "pays": "Mongolia",
+    "morts": 13.87031068
+  },
+  {
+    "pays": "Montenegro",
+    "morts": 1.413261039
+  },
+  {
+    "pays": "Morocco",
+    "morts": 0.368601178
+  },
+  {
+    "pays": "Mozambique",
+    "morts": 3.899751101
+  },
+  {
+    "pays": "Myanmar",
+    "morts": 1.500902142
+  },
+  {
+    "pays": "Namibia",
+    "morts": 2.434991164
+  },
+  {
+    "pays": "Nepal",
+    "morts": 1.160377082
+  },
+  {
+    "pays": "Netherlands",
+    "morts": 1.864263101
+  },
+  {
+    "pays": "New Zealand",
+    "morts": 1.063253583
+  },
+  {
+    "pays": "Nicaragua",
+    "morts": 7.271933499
+  },
+  {
+    "pays": "Niger",
+    "morts": 1.45748781
+  },
+  {
+    "pays": "Nigeria",
+    "morts": 2.035326109
+  },
+  {
+    "pays": "North Africa and Middle East",
+    "morts": 0.335718428
+  },
+  {
+    "pays": "North America",
+    "morts": 3.148837779
+  },
+  {
+    "pays": "North Korea",
+    "morts": 1.296600238
+  },
+  {
+    "pays": "Northern Ireland",
+    "morts": 3.401385262
+  },
+  {
+    "pays": "Northern Mariana Islands",
+    "morts": 2.528664676
+  },
+  {
+    "pays": "Norway",
+    "morts": 3.330420066
+  },
+  {
+    "pays": "Oceania",
+    "morts": 1.204986556
+  },
+  {
+    "pays": "Oman",
+    "morts": 0.282805353
+  },
+  {
+    "pays": "Pakistan",
+    "morts": 1.042338573
+  },
+  {
+    "pays": "Palestine",
+    "morts": 0.307545891
+  },
+  {
+    "pays": "Panama",
+    "morts": 0.706428608
+  },
+  {
+    "pays": "Papua New Guinea",
+    "morts": 1.361537221
+  },
+  {
+    "pays": "Paraguay",
+    "morts": 4.118625893
+  },
+  {
+    "pays": "Peru",
+    "morts": 0.893240807
+  },
+  {
+    "pays": "Philippines",
+    "morts": 1.631883069
+  },
+  {
+    "pays": "Poland",
+    "morts": 8.269125737
+  },
+  {
+    "pays": "Portugal",
+    "morts": 1.637107279
+  },
+  {
+    "pays": "Puerto Rico",
+    "morts": 2.48072252
+  },
+  {
+    "pays": "Qatar",
+    "morts": 0.368414745
+  },
+  {
+    "pays": "Romania",
+    "morts": 2.163443942
+  },
+  {
+    "pays": "Russia",
+    "morts": 14.41633892
+  },
+  {
+    "pays": "Rwanda",
+    "morts": 2.810929575
+  },
+  {
+    "pays": "Saint Lucia",
+    "morts": 4.310669096
+  },
+  {
+    "pays": "Saint Vincent and the Grenadines",
+    "morts": 7.452965986
+  },
+  {
+    "pays": "Samoa",
+    "morts": 0.606762077
+  },
+  {
+    "pays": "Sao Tome and Principe",
+    "morts": 1.867390043
+  },
+  {
+    "pays": "Saudi Arabia",
+    "morts": 0.363636182
+  },
+  {
+    "pays": "Scotland",
+    "morts": 4.740084453
+  },
+  {
+    "pays": "Senegal",
+    "morts": 1.611104204
+  },
+  {
+    "pays": "Serbia",
+    "morts": 2.849600848
+  },
+  {
+    "pays": "Seychelles",
+    "morts": 0.832773956
+  },
+  {
+    "pays": "Sierra Leone",
+    "morts": 1.761172247
+  },
+  {
+    "pays": "Singapore",
+    "morts": 0.174744001
+  },
+  {
+    "pays": "Slovakia",
+    "morts": 3.193511261
+  },
+  {
+    "pays": "Slovenia",
+    "morts": 5.477073837
+  },
+  {
+    "pays": "Solomon Islands",
+    "morts": 0.971117131
+  },
+  {
+    "pays": "Somalia",
+    "morts": 2.339104206
+  },
+  {
+    "pays": "South Africa",
+    "morts": 1.383182363
+  },
+  {
+    "pays": "South Asia",
+    "morts": 1.989622929
+  },
+  {
+    "pays": "South Korea",
+    "morts": 1.225926299
+  },
+  {
+    "pays": "South Sudan",
+    "morts": 2.144866236
+  },
+  {
+    "pays": "Southeast Asia",
+    "morts": 1.134191137
+  },
+  {
+    "pays": "Southeast Asia, East Asia, and Oceania",
+    "morts": 1.120747289
+  },
+  {
+    "pays": "Southern Latin America",
+    "morts": 2.14048883
+  },
+  {
+    "pays": "Southern Sub-Saharan Africa",
+    "morts": 1.396954445
+  },
+  {
+    "pays": "Spain",
+    "morts": 0.607720905
+  },
+  {
+    "pays": "Sri Lanka",
+    "morts": 2.047084954
+  },
+  {
+    "pays": "Sub-Saharan Africa",
+    "morts": 2.027316397
+  },
+  {
+    "pays": "Sudan",
+    "morts": 0.459323386
+  },
+  {
+    "pays": "Suriname",
+    "morts": 3.330895322
+  },
+  {
+    "pays": "Swaziland",
+    "morts": 2.697185638
+  },
+  {
+    "pays": "Sweden",
+    "morts": 2.336215537
+  },
+  {
+    "pays": "Switzerland",
+    "morts": 1.766369412
+  },
+  {
+    "pays": "Syria",
+    "morts": 0.522104318
+  },
+  {
+    "pays": "Taiwan",
+    "morts": 1.467417811
+  },
+  {
+    "pays": "Tajikistan",
+    "morts": 2.343316952
+  },
+  {
+    "pays": "Tanzania",
+    "morts": 2.345059109
+  },
+  {
+    "pays": "Thailand",
+    "morts": 2.515397235
+  },
+  {
+    "pays": "Timor",
+    "morts": 1.278026704
+  },
+  {
+    "pays": "Togo",
+    "morts": 2.058587127
+  },
+  {
+    "pays": "Tonga",
+    "morts": 0.828430363
+  },
+  {
+    "pays": "Trinidad and Tobago",
+    "morts": 2.16805654
+  },
+  {
+    "pays": "Tropical Latin America",
+    "morts": 4.509476376
+  },
+  {
+    "pays": "Tunisia",
+    "morts": 0.232351539
+  },
+  {
+    "pays": "Turkey",
+    "morts": 0.243133345
+  },
+  {
+    "pays": "Turkmenistan",
+    "morts": 2.891900344
+  },
+  {
+    "pays": "Uganda",
+    "morts": 2.214571174
+  },
+  {
+    "pays": "Ukraine",
+    "morts": 13.88313115
+  },
+  {
+    "pays": "United Arab Emirates",
+    "morts": 0.813769897
+  },
+  {
+    "pays": "United Kingdom",
+    "morts": 2.750807555
+  },
+  {
+    "pays": "United States",
+    "morts": 3.24167928
+  },
+  {
+    "pays": "United States Virgin Islands",
+    "morts": 8.473448421
+  },
+  {
+    "pays": "Uruguay",
+    "morts": 2.538606165
+  },
+  {
+    "pays": "Uzbekistan",
+    "morts": 1.034207967
+  },
+  {
+    "pays": "Vanuatu",
+    "morts": 1.552471647
+  },
+  {
+    "pays": "Venezuela",
+    "morts": 0.696865718
+  },
+  {
+    "pays": "Vietnam",
+    "morts": 0.959072294
+  },
+  {
+    "pays": "Wales",
+    "morts": 3.157246572
+  },
+  {
+    "pays": "Western Europe",
+    "morts": 2.634522391
+  },
+  {
+    "pays": "Western Sub-Saharan Africa",
+    "morts": 2.068645668
+  },
+  {
+    "pays": "World",
+    "morts": 2.260976763
+  },
+  {
+    "pays": "Yemen",
+    "morts": 0.412563763
+  },
+  {
+    "pays": "Zambia",
+    "morts": 2.797370028
+  },
+  {
+    "pays": "Zimbabwe",
+    "morts": 0.919957613
+  }
+]
