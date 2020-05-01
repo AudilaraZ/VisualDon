@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Exercice canvas</title>
+  </head>
+  <body>
+    <canvas id="dessin" width="1000" height="500"></canvas>
+    <script>
+
+const canvas = document.getElementById('dessin')
+const context = canvas.getContext('2d')
+
+
+const WIDTH = 1000
+  const HEIGHT = 500
+  canvas.setAttribute('width', WIDTH)
+  canvas.setAttribute('height', HEIGHT)
+
+
+// DESSINEZ ICI
+ // Créer une image
+ var img = new Image()
+
+// Ajouter la source
+img.src = 'https://unsplash.it/755/400?image=940'
+// Utiliser l'image une fois qu'elle est chargée
+img.addEventListener('load', () => {
+    context.drawImage(img, 350, 100, 300, 150)
+    context.drawImage(img, 50, 300, 300, 150)
+}, false)
+
+// "Hello Green" en haut à gauche
+context.font = '48px sans serif'
+context.fillText('Hello Green!', 10, 200)
+
+// un rectangle vert
+context.fillStyle = 'teal'
+context.fillRect(0, 200, WIDTH / 1, HEIGHT / 1)
+
+ // un rectangle avec un contour
+ context.strokeStyle = 'MediumSpringGreen'
+  context.strokeRect(WIDTH / 4, HEIGHT / 3, WIDTH / 2, HEIGHT / 2)
+
+    </script>
+  </body>
+</html>

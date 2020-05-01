@@ -17,13 +17,21 @@ Les données viennent de ourworldindata.org, un site spécialisé en données su
 
 On a choisi cette thématique parce qu’elle regroupe des causes de mortalité qui généralement, en tant que jeunes, on regarde pas avec le juste poids. Donc avec nos graphiques on aimerait montrer à notre génération les terribles effets de ces 3 mauvaises habitudes (tabac, alcool et drogues).
 
-**Comment elles ont été transformées**Téléchargés en format .csv, en cours de progression
+**Comment elles ont été transformées**
 
-**Un lien vers le code source de votre visualisation**en cours de progression
+Téléchargés en format .csv, en cours de progression
 
-**Un lien vers votre visualisation publiée**Nous n’avons pas encore de liens à montrer
+**Un lien vers le code source de votre visualisation**
 
-**Quel scripte je dois utiliser pour recréer le site à partir de votre code**en cours de progression
+en cours de progression
+
+**Un lien vers votre visualisation publiée**
+
+Nous n’avons pas encore de liens à montrer
+
+**Quel scripte je dois utiliser pour recréer le site à partir de votre code**
+
+en cours de progression
 
 **À faire:**
 
