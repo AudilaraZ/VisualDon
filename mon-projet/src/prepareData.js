@@ -1,13 +1,15 @@
 const fs = require('fs');
 
-const fichier = fs.readFileSync('alcool_2017.csv', 'utf-8');
+const fichier = fs.readFileSync('alcool.csv', 'utf-8');
 
 const result = fichier
     .split('\n')
-    .map(ligne => ligne.split(';'))
+    .map(ligne => ligne.split(','))
     .map(d => ({
-        pays: d[0],
-        morts: Number(d[1].trim().split(',').join('.'))
+        Entity: d[0],
+        Code: d[1],
+        Year: Number(d[2]),
+        deathRate: Number(d[3].trim().split(',').join('.'))
     }))
 
 console.log(

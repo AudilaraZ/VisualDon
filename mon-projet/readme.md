@@ -10,4 +10,3 @@ cd mon-projet
 npx degit idris-maps/heig-datavis-2020/template/d3-carte
 npm install
 ```
-

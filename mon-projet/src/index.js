@@ -1,16 +1,26 @@
-import * as d3 from 'd3'
-
-console.log(d3)
 // importer les fonctions "d3"
 import { select, geoNaturalEarth1, geoPath } from 'd3'
 
 // importer les pays
 import countries from './countries.json'
-import data from './data.json'
+import deathrateAlcool from './deathrate-alcool.json'
+
+const cleanDeathRate = deathrateAlcool.filter(d => d.Year === 2017).filter(d => d.Code !== "")
+
+const getDeathRateByCountry = (countryCode) => cleanDeathRate.find(d => d.Code === countryCode)
+
+const getFillByCountry = ({properties}) => {
+  if(typeof getDeathRateByCountry(properties.iso_a3) !== 'undefined') { 
+  return getDeathRateByCountry(properties.iso_a3).deathRate > 5.00 
+    ? 'red' : 'orange'
+  }else{
+    return 'black';
+  }
+} 
 
 // définir la taille du svg
-const WIDTH = 800
-const HEIGHT = 400
+const WIDTH = 1280
+const HEIGHT = 720
 
 // ajouter un <svg> à la <div id="carte">
 const svg = select('#carte').append('svg')
@@ -29,13 +39,15 @@ svg.selectAll('path')
     .enter()
     .append('path')
     .attr('d', pathCreator)
+    .attr('fill',getFillByCountry)
+    .attr('stroke','black')
 
 // les coordonnées de la gare d'Yverdon
-const yverdon = [6.64123, 46.78109]
+//const yverdon = [6.64123, 46.78109]
 
 // pour projeter un point, nous devons utiliser la projection directement
-svg.append('circle')
-  .attr('cx', projection(yverdon)[0])
-  .attr('cy', projection(yverdon)[1])
-  .attr('r', 10)
-  .attr('fill', 'red')
+//svg.append('circle')
+//  .attr('cx', projection(yverdon)[0])
+//  .attr('cy', projection(yverdon)[1])
+//  .attr('r', 10)
+//  .attr('fill', 'hotpink')
