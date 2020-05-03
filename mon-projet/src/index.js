@@ -1,53 +1,124 @@
-// importer les fonctions "d3"
-import { select, geoNaturalEarth1, geoPath } from 'd3'
+//import $ from 'jquery';
+//window.jQuery = window.$ = $;
+import L from 'leaflet';
+import 'leaflet-defaulticon-compatibility'
+import countriesData from '../data/pays.json'
+import alcoolData from '../data/deathrate-alcool.json' 
+//import tabacData from '../data/deathrate-tabac.json' 
+//import drugsData from '../data/deathrate-drugs.json' 
 
-// importer les pays
-import countries from './countries.json'
-import deathrateAlcool from './deathrate-alcool.json'
 
-const cleanDeathRate = deathrateAlcool.filter(d => d.Year === 2017).filter(d => d.Code !== "")
+let leafMap = L.map('leafMap').setView([20, 0], 2);
+let geoJson
+let info = L.control();
+let legend = L.control({position: 'bottomright'});
 
-const getDeathRateByCountry = (countryCode) => cleanDeathRate.find(d => d.Code === countryCode)
 
-const getFillByCountry = ({properties}) => {
-  if(typeof getDeathRateByCountry(properties.iso_a3) !== 'undefined') { 
-  return getDeathRateByCountry(properties.iso_a3).deathRate > 5.00 
-    ? 'red' : 'orange'
-  }else{
-    return 'black';
-  }
-} 
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+	subdomains: 'abcd',
+	maxZoom: 10
+}).addTo(leafMap);
 
-// définir la taille du svg
-const WIDTH = 1280
-const HEIGHT = 720
+function getColor(d) {
+    if (sortBy === 'death_tabac'){
+        return  d >= 9  ? '#49006a' :
+                    d >= 8  ? '#7a0177' :
+                    d >= 7	 ? '#ae017e' :
+                    d >= 6  ? '#dd3497' :
+                    d >= 5  ? '#f768a1' :
+                    d >= 4  ? '#fa9fb5' :
+                    d >= 3  ? '#fcc5c0' :
+                    d >= 2  ? '#fde0dd' :
+                               '#FDF3DE';
+    }else {
+        if(sortBy === 'deathRate'){
+            return  d >= 9  ? '#49006a' :
+                    d >= 8  ? '#7a0177' :
+                    d >= 7	 ? '#ae017e' :
+                    d >= 6  ? '#dd3497' :
+                    d >= 5  ? '#f768a1' :
+                    d >= 4  ? '#fa9fb5' :
+                    d >= 3  ? '#fcc5c0' :
+                    d >= 2  ? '#fde0dd' :
+                               '#FDF3DE';
+            }else {
+                //(sortBy === 'death_drogues')
+            return  d >= 9  ? '#49006a' :
+                    d >= 8  ? '#7a0177' :
+                    d >= 7	 ? '#ae017e' :
+                    d >= 6  ? '#dd3497' :
+                    d >= 5  ? '#f768a1' :
+                    d >= 4  ? '#fa9fb5' :
+                    d >= 3  ? '#fcc5c0' :
+                    d >= 2  ? '#fde0dd' :
+                               '#FDF3DE';
+    }
+}
+}
 
-// ajouter un <svg> à la <div id="carte">
-const svg = select('#carte').append('svg')
-  .attr('width', WIDTH)
-  .attr('height', HEIGHT)
+function style(feature) {
+    return {
+        fillColor: getColor(alcoolData.filter(d => d.Entity === feature.properties.name)[0][sortBy]),
+        weight: 1,
+        opacity: 1,
+        color: 'white',
+        fillOpacity: 0.7
+    };
+}
 
-// définir la projection pour faire entrer tous les pays dans le <svg>
-const projection = geoNaturalEarth1().fitExtent([[0, 0], [WIDTH, HEIGHT]], countries)
+function highlightFeature(e) {
+    let layer = e.target;
 
-// définir le créateur d'attribut "d" pour l'élément <path>
-const pathCreator = geoPath().projection(projection)
+    layer.setStyle({
+        weight: 3,
+        color: '#666',
+        fillOpacity: 0.7
+    });
 
-// ajouter un <path> par pays au <svg>
-svg.selectAll('path')
-    .data(countries.features)
-    .enter()
-    .append('path')
-    .attr('d', pathCreator)
-    .attr('fill',getFillByCountry)
-    .attr('stroke','black')
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+    
+    info.update(layer.feature.properties);
+}
 
-// les coordonnées de la gare d'Yverdon
-//const yverdon = [6.64123, 46.78109]
+function resetHighlight(e) {
+    geoJson.resetStyle(e.target);
+    info.update();
+}
 
-// pour projeter un point, nous devons utiliser la projection directement
-//svg.append('circle')
-//  .attr('cx', projection(yverdon)[0])
-//  .attr('cy', projection(yverdon)[1])
-//  .attr('r', 10)
-//  .attr('fill', 'hotpink')
+function onEachFeature(feature, layer) {
+    layer.on({
+        mouseover: highlightFeature,
+        mouseout: resetHighlight
+    });
+}
+
+function reload() {
+    leafMap.removeLayer(geoJson);
+    leafMap.removeLayer(legend);
+    geoJson = L.geoJson(countriesData, {style, onEachFeature}).addTo(leafMap);
+    legend.addTo(leafMap);
+}
+
+//L.geoJSON(countriesData).addTo(leafMap)
+geoJson = L.geoJson(countriesData, {style, onEachFeature}).addTo(leafMap);
+
+//Infos
+
+info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+    this.update();
+    return this._div;
+};
+
+info.update = function (props) {
+    this._div.innerHTML = '<h4>Infos</h4>' +  (props ?
+        '<b>' + props.name + '</b><br />' + alcoolData.filter(d => d.Entity === props.name)[0][sortBy] + 'morts.'
+        : 'Survoler un pays');
+};
+
+info.addTo(leafMap);
+
+

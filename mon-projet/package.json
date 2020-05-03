@@ -1,20 +1,22 @@
 {
-  "name": "template-d3-carte",
+  "name": "mise-place-d3",
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
     "deploy": "surge dist --audreyzeugin.surge.sh"
   },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "d3": "^5.16.0"
-  },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
   },
-  "description": "## Utilisation",
-  "main": "index.js",
-  "keywords": [],
-  "author": ""
+  "dependencies": {
+    "d3": "^5.15.1"
+  }
 }
+

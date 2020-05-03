@@ -1,10 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Ma carte du monde de l'alcool</title>
-  </head>
-  <body>
-    <div id="carte"></div>
-    <script src="index.js"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="../node_modules/leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css">
+    <title>Ma carte du monde des muavaises habitudes</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+</head>
+
+<body>
+    <h1>les mauvaises habitudes</h1>
+
+    <form>
+        Catégories
+        <input type="radio" id="tabacRadio" name="sortBy" value="death_tabac" class="radioButton" checked>
+        <label for="TabacRadio">Tabac</label>
+        <input type="radio" id="alcoolRadio" name="sortBy" value="death_alcool" class="radioButton">
+        <label for="AlcoolRadio">Alcool</label>
+        <input type="radio" id="droguesRadio" name="sortBy" value="death_drogues" class="radioButton">
+        <label for="AlcoolRadio">Drogues</label>
+        <input type="radio" id="20Radio" name="sortBy" value="death_20" class="radioButton">
+        <label for="20Radio">Top 20 + de morts</label>
+    </form>
+    <section id="map">
+        <div id="leafMap"></div>
+    </section>    
+</body>
+<script src="index.js"></script>
 </html>
+
+
