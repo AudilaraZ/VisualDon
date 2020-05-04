@@ -1,0 +1,422 @@
+[
+  {
+    "Date": "1990-01-01",
+    "name": "Smoking",
+    "value": 29027.92585
+  },
+  {
+    "Date": "1990-01-01",
+    "name": "Alcohol",
+    "value": 668.0317632
+  },
+  {
+    "Date": "1990-01-01",
+    "name": "Drug",
+    "value": 235.5034344
+  },
+  {
+    "Date": "1991-01-01",
+    "name": "Smoking",
+    "value": 28677.60723
+  },
+  {
+    "Date": "1991-01-01",
+    "name": "Alcohol",
+    "value": 688.6658877
+  },
+  {
+    "Date": "1991-01-01",
+    "name": "Drug",
+    "value": 245.9247537
+  },
+  {
+    "Date": "1992-01-01",
+    "name": "Smoking",
+    "value": 28489.88086
+  },
+  {
+    "Date": "1992-01-01",
+    "name": "Alcohol",
+    "value": 717.392197
+  },
+  {
+    "Date": "1992-01-01",
+    "name": "Drug",
+    "value": 258.9356179
+  },
+  {
+    "Date": "1993-01-01",
+    "name": "Smoking",
+    "value": 28428.57672
+  },
+  {
+    "Date": "1993-01-01",
+    "name": "Alcohol",
+    "value": 761.7423148
+  },
+  {
+    "Date": "1993-01-01",
+    "name": "Drug",
+    "value": 272.8258837
+  },
+  {
+    "Date": "1994-01-01",
+    "name": "Smoking",
+    "value": 28200.04234
+  },
+  {
+    "Date": "1994-01-01",
+    "name": "Alcohol",
+    "value": 797.600775
+  },
+  {
+    "Date": "1994-01-01",
+    "name": "Drug",
+    "value": 290.6181377
+  },
+  {
+    "Date": "1995-01-01",
+    "name": "Smoking",
+    "value": 27877.88386
+  },
+  {
+    "Date": "1995-01-01",
+    "name": "Alcohol",
+    "value": 799.6462131
+  },
+  {
+    "Date": "1995-01-01",
+    "name": "Drug",
+    "value": 305.8292326
+  },
+  {
+    "Date": "1996-01-01",
+    "name": "Smoking",
+    "value": 27351.6876
+  },
+  {
+    "Date": "1996-01-01",
+    "name": "Alcohol",
+    "value": 781.0009084
+  },
+  {
+    "Date": "1996-01-01",
+    "name": "Drug",
+    "value": 312.8982491
+  },
+  {
+    "Date": "1997-01-01",
+    "name": "Smoking",
+    "value": 26834.44965
+  },
+  {
+    "Date": "1997-01-01",
+    "name": "Alcohol",
+    "value": 769.4116583
+  },
+  {
+    "Date": "1997-01-01",
+    "name": "Drug",
+    "value": 324.543641
+  },
+  {
+    "Date": "1998-01-01",
+    "name": "Smoking",
+    "value": 26347.2029
+  },
+  {
+    "Date": "1998-01-01",
+    "name": "Alcohol",
+    "value": 765.5678629
+  },
+  {
+    "Date": "1998-01-01",
+    "name": "Drug",
+    "value": 335.7984497
+  },
+  {
+    "Date": "1999-01-01",
+    "name": "Smoking",
+    "value": 25887.35314
+  },
+  {
+    "Date": "1999-01-01",
+    "name": "Alcohol",
+    "value": 761.0841438
+  },
+  {
+    "Date": "1999-01-01",
+    "name": "Drug",
+    "value": 343.0405834
+  },
+  {
+    "Date": "2000-01-01",
+    "name": "Smoking",
+    "value": 25369.54062
+  },
+  {
+    "Date": "2000-01-01",
+    "name": "Alcohol",
+    "value": 754.8731861
+  },
+  {
+    "Date": "2000-01-01",
+    "name": "Drug",
+    "value": 351.5697883
+  },
+  {
+    "Date": "2001-01-01",
+    "name": "Smoking",
+    "value": 24851.84591
+  },
+  {
+    "Date": "2001-01-01",
+    "name": "Alcohol",
+    "value": 754.8411779
+  },
+  {
+    "Date": "2001-01-01",
+    "name": "Drug",
+    "value": 351.4683228
+  },
+  {
+    "Date": "2002-01-01",
+    "name": "Smoking",
+    "value": 24486.98045
+  },
+  {
+    "Date": "2002-01-01",
+    "name": "Alcohol",
+    "value": 753.2149947
+  },
+  {
+    "Date": "2002-01-01",
+    "name": "Drug",
+    "value": 351.3224653
+  },
+  {
+    "Date": "2003-01-01",
+    "name": "Smoking",
+    "value": 24105.83182
+  },
+  {
+    "Date": "2003-01-01",
+    "name": "Alcohol",
+    "value": 753.8591633
+  },
+  {
+    "Date": "2003-01-01",
+    "name": "Drug",
+    "value": 350.9293804
+  },
+  {
+    "Date": "2004-01-01",
+    "name": "Smoking",
+    "value": 23583.62836
+  },
+  {
+    "Date": "2004-01-01",
+    "name": "Alcohol",
+    "value": 755.6844245
+  },
+  {
+    "Date": "2004-01-01",
+    "name": "Drug",
+    "value": 352.1207717
+  },
+  {
+    "Date": "2005-01-01",
+    "name": "Smoking",
+    "value": 23194.80609
+  },
+  {
+    "Date": "2005-01-01",
+    "name": "Alcohol",
+    "value": 762.693898
+  },
+  {
+    "Date": "2005-01-01",
+    "name": "Drug",
+    "value": 356.455282
+  },
+  {
+    "Date": "2006-01-01",
+    "name": "Smoking",
+    "value": 22667.9713
+  },
+  {
+    "Date": "2006-01-01",
+    "name": "Alcohol",
+    "value": 747.9095074
+  },
+  {
+    "Date": "2006-01-01",
+    "name": "Drug",
+    "value": 358.4343813
+  },
+  {
+    "Date": "2007-01-01",
+    "name": "Smoking",
+    "value": 22202.19351
+  },
+  {
+    "Date": "2007-01-01",
+    "name": "Alcohol",
+    "value": 733.9723821
+  },
+  {
+    "Date": "2007-01-01",
+    "name": "Drug",
+    "value": 361.7306591
+  },
+  {
+    "Date": "2008-01-01",
+    "name": "Smoking",
+    "value": 21753.31452
+  },
+  {
+    "Date": "2008-01-01",
+    "name": "Alcohol",
+    "value": 718.3536375
+  },
+  {
+    "Date": "2008-01-01",
+    "name": "Drug",
+    "value": 361.9517784
+  },
+  {
+    "Date": "2009-01-01",
+    "name": "Smoking",
+    "value": 21293.33447
+  },
+  {
+    "Date": "2009-01-01",
+    "name": "Alcohol",
+    "value": 695.7013282
+  },
+  {
+    "Date": "2009-01-01",
+    "name": "Drug",
+    "value": 359.8991461
+  },
+  {
+    "Date": "2010-01-01",
+    "name": "Smoking",
+    "value": 20863.79862
+  },
+  {
+    "Date": "2010-01-01",
+    "name": "Alcohol",
+    "value": 682.7025922
+  },
+  {
+    "Date": "2010-01-01",
+    "name": "Drug",
+    "value": 359.7417027
+  },
+  {
+    "Date": "2011-01-01",
+    "name": "Smoking",
+    "value": 20395.26144
+  },
+  {
+    "Date": "2011-01-01",
+    "name": "Alcohol",
+    "value": 665.624862
+  },
+  {
+    "Date": "2011-01-01",
+    "name": "Drug",
+    "value": 360.1070079
+  },
+  {
+    "Date": "2012-01-01",
+    "name": "Smoking",
+    "value": 19963.33595
+  },
+  {
+    "Date": "2012-01-01",
+    "name": "Alcohol",
+    "value": 653.0674215
+  },
+  {
+    "Date": "2012-01-01",
+    "name": "Drug",
+    "value": 361.9576956
+  },
+  {
+    "Date": "2013-01-01",
+    "name": "Smoking",
+    "value": 19550.78339
+  },
+  {
+    "Date": "2013-01-01",
+    "name": "Alcohol",
+    "value": 645.3606724
+  },
+  {
+    "Date": "2013-01-01",
+    "name": "Drug",
+    "value": 366.335747
+  },
+  {
+    "Date": "2014-01-01",
+    "name": "Smoking",
+    "value": 19203.70146
+  },
+  {
+    "Date": "2014-01-01",
+    "name": "Alcohol",
+    "value": 641.4964589
+  },
+  {
+    "Date": "2014-01-01",
+    "name": "Drug",
+    "value": 373.5834474
+  },
+  {
+    "Date": "2015-01-01",
+    "name": "Smoking",
+    "value": 19012.17897
+  },
+  {
+    "Date": "2015-01-01",
+    "name": "Alcohol",
+    "value": 644.3024266
+  },
+  {
+    "Date": "2015-01-01",
+    "name": "Drug",
+    "value": 384.9451324
+  },
+  {
+    "Date": "2016-01-01",
+    "name": "Smoking",
+    "value": 18694.33539
+  },
+  {
+    "Date": "2016-01-01",
+    "name": "Alcohol",
+    "value": 643.5195291
+  },
+  {
+    "Date": "2016-01-01",
+    "name": "Drug",
+    "value": 399.6140103
+  },
+  {
+    "Date": "2017-01-01",
+    "name": "Smoking",
+    "value": 18387.06416
+  },
+  {
+    "Date": "2017-01-01",
+    "name": "Alcohol",
+    "value": 644.677159
+  },
+  {
+    "Date": "2017-01-01",
+    "name": "Drug",
+    "value": 407.7574097
+  }
+]
