@@ -1,4 +1,16 @@
+
+//import dessinerGraphiqueDrugs from './graphique-drugs.js'
+//import dessinerGraphiqueDrugs from './drugs-leaflet.js'
+//import dessinerGraphiqueBatons from './batons.js'
+
+//dessinerGraphiqueDrugs('map')
+//dessinerGraphiqueBatons('batons')
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
 import countries from '../data/countries_badhabits.json'
+
 import L from 'leaflet'
 //import 'leaflet-defaulticon-compatibility'
 var map = L.map('map').setView([20, 0], 2);
@@ -12,7 +24,7 @@ var map = L.map('map').setView([20, 0], 2);
       }).addTo(map);
 
 
-//pop up pays et leurs données
+////////////////////pop up étas
 
 var info = L.control();
 
@@ -24,45 +36,32 @@ info.onAdd = function (map) {
 
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
-    this._div.innerHTML = '<h4>Taux sur 100.000 habitants </h4>' +  (props ?
-        '<b>' + props.name + '</b><br />' + props.alcool +'</sup>'
-        : 'survoler sur pays ');
+    this._div.innerHTML = '<h4>Taux de mortes par mauvaises habitudes sur 100.000 habitants en 2017</h4>' +  (props ?
+        '<b>' + props.name + '</b><br />' + (props.drug +props.alcool+props.tabac)+'</sup>'
+        : 'Passer sur un étas');
 };
 
 info.addTo(map);
 
 
-// mettre des couleurs différentes en fonction du taux
+///////////////////////////couleurs
 
 function getColor(d) {
-  return d > 18 ? '#081d58' :
-         d > 16  ? '#253494' :
-         d > 14  ? '#225ea8' :
-         d > 12  ? '#1d91c0' :
-         d > 10   ? '#41b6c4' :
-         d > 8   ? '#7fcdbb' :
-         d > 6   ? '#c7e9b4' :
-         d > 4   ? '#edf8b1' :
-         d > 2   ? '#ffffd9' :
-                    '#fcfcef';
+  return d > 200  ? '#000000' :
+         d > 150  ? '#252525' :
+         d > 100   ? '#969696' :
+         d > 75   ? '#969696' :
+         d > 50   ? '#bdbdbd' :
+         d > 25   ? '#d9d9d9' :
+                    '#FFFFFF';
 }
-
-
-
-
-
-
-
-
-
-
 
 function style(feature) {
     return {
-        fillColor: getColor(feature.properties.alcool),
+        fillColor: getColor(feature.properties.drug + feature.properties.alcool + feature.properties.tabac),
         weight: 1,
         opacity: 1,
-        color: 'grey',
+        color: 'black',
         fillOpacity: 0.8
     };
 }
@@ -70,7 +69,7 @@ function style(feature) {
 L.geoJson(countries, {style: style}).addTo(map);
 
 
-// highlight, quand je passe par dessus avec la souris
+//////////////////// highlight
 function highlightFeature(e) {
   var layer = e.target;
 
@@ -78,10 +77,8 @@ function highlightFeature(e) {
       weight: 4,
       color: '#666',
       fillOpacity: 0.7,
-      fillColor:'yellow'
+      fillColor:'red'
   });
-
-
 
   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
       layer.bringToFront();
@@ -89,7 +86,7 @@ function highlightFeature(e) {
   info.update(layer.feature.properties);
 }
 
-// en plus...
+///////////////////////////
 
 var geojson;
 
@@ -122,7 +119,7 @@ var legend = L.control({position: 'bottomright'});
 legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [0, 2, 4, 6, 8, 10, 12, 14, 16, +18],
+        grades = [0, 0.5, 1, 2, 3, 4, 5, 10, +15],
         labels = [];
 
     // loop through our density intervals and generate a label with a colored square for each interval

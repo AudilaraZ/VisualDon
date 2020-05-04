@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../node_modules/leaflet/dist/leaflet.css">
-        <title>Bad habits</title>
+        <title>Mauves habitudes</title>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin=""/>
@@ -13,6 +13,22 @@
       
         <link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" rel="stylesheet">
         <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+
+
+        <style>
+                #button {
+                background-color: #ffc77d;
+                border: none;
+                color: white;
+                padding: 15px 20px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                margin: 4px 2px;
+                cursor: pointer;
+                }
+             </style>
         
         <!--map-->
         <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
@@ -23,7 +39,15 @@
 <body>
     <h1>Causes de mortalité</h1>
 
-    <form>
+    <div id="selectButton">
+        <button id="button" type="button" value="deathTabalc" >TABAC</button>
+        <button id="button" type="button" value="deathAlcool" >ALCOOL</button>
+        <button id="button"type="button" value="deathDrug" >DROGUES</button>
+        <button id="button"type="button" value="deathAll" >TOUS</button>
+        <button id="button"type="button" value="deathAll" >DE 1990 À 2017</button>
+      </div>
+
+    <!-- <form>
         Catégories
         <input type="radio" id="tabacRadio" name="sortBy" value="deathTabac" class="radioButton" checked>
         <label for="TabacRadio">Tabac</label>
@@ -33,12 +57,16 @@
         <label for="DrugRadio">Drogues</label>
         <input type="radio" id="20Radio" name="sortBy" value="death20" class="radioButton">
         <label for="20Radio">Top 20 + de morts</label>
-    </form>
+    </form> -->
     <section id="map">
         <div id="leafMap"></div>
-    </section>    
+    </section>
+    
+    <section id="timer">
+            <div id="deathtimer"></div>
+        </section>
 </body>
-<script src="index.js"></script>
+<script src="index_alcool.js"></script>
 </html>
 
 
