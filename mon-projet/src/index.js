@@ -1,111 +1,20 @@
-//import $ from 'jquery';
-//window.jQuery = window.$ = $;
-import L from 'leaflet';
-import 'leaflet-defaulticon-compatibility'
-import countriesData from '../data/pays.json'
-import alcoolData from '../data/deathrate-alcool.json' 
-//import tabacData from '../data/deathrate-tabac.json' 
-//import drugsData from '../data/deathrate-drugs.json' 
+import countries from '../data/countries_badhabits.json'
+import L from 'leaflet'
+//import 'leaflet-defaulticon-compatibility'
+var map = L.map('map').setView([20, 0], 2);
+
+      L.tileLayer('https://api.maptiler.com/maps/positron/{z}/{x}/{y}.png?key=eiKhCNn6PEp5PueYXKV5',{
+        tileSize: 512,
+        zoomOffset: -1,
+        minZoom: 1,
+        attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>',
+        crossOrigin: true
+      }).addTo(map);
 
 
-let leafMap = L.map('leafMap').setView([20, 0], 2);
-let geoJson
-let info = L.control();
-let legend = L.control({position: 'bottomright'});
+//pop up pays et leurs données
 
-
-L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-	subdomains: 'abcd',
-	maxZoom: 10
-}).addTo(leafMap);
-
-function getColor(d) {
-    if (sortBy === 'death_tabac'){
-        return  d >= 9  ? '#49006a' :
-                    d >= 8  ? '#7a0177' :
-                    d >= 7	 ? '#ae017e' :
-                    d >= 6  ? '#dd3497' :
-                    d >= 5  ? '#f768a1' :
-                    d >= 4  ? '#fa9fb5' :
-                    d >= 3  ? '#fcc5c0' :
-                    d >= 2  ? '#fde0dd' :
-                               '#FDF3DE';
-    }else {
-        if(sortBy === 'deathRate'){
-            return  d >= 9  ? '#49006a' :
-                    d >= 8  ? '#7a0177' :
-                    d >= 7	 ? '#ae017e' :
-                    d >= 6  ? '#dd3497' :
-                    d >= 5  ? '#f768a1' :
-                    d >= 4  ? '#fa9fb5' :
-                    d >= 3  ? '#fcc5c0' :
-                    d >= 2  ? '#fde0dd' :
-                               '#FDF3DE';
-            }else {
-                //(sortBy === 'death_drogues')
-            return  d >= 9  ? '#49006a' :
-                    d >= 8  ? '#7a0177' :
-                    d >= 7	 ? '#ae017e' :
-                    d >= 6  ? '#dd3497' :
-                    d >= 5  ? '#f768a1' :
-                    d >= 4  ? '#fa9fb5' :
-                    d >= 3  ? '#fcc5c0' :
-                    d >= 2  ? '#fde0dd' :
-                               '#FDF3DE';
-    }
-}
-}
-
-function style(feature) {
-    return {
-        fillColor: getColor(alcoolData.filter(d => d.Entity === feature.properties.name)[0][sortBy]),
-        weight: 1,
-        opacity: 1,
-        color: 'white',
-        fillOpacity: 0.7
-    };
-}
-
-function highlightFeature(e) {
-    let layer = e.target;
-
-    layer.setStyle({
-        weight: 3,
-        color: '#666',
-        fillOpacity: 0.7
-    });
-
-    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-        layer.bringToFront();
-    }
-    
-    info.update(layer.feature.properties);
-}
-
-function resetHighlight(e) {
-    geoJson.resetStyle(e.target);
-    info.update();
-}
-
-function onEachFeature(feature, layer) {
-    layer.on({
-        mouseover: highlightFeature,
-        mouseout: resetHighlight
-    });
-}
-
-function reload() {
-    leafMap.removeLayer(geoJson);
-    leafMap.removeLayer(legend);
-    geoJson = L.geoJson(countriesData, {style, onEachFeature}).addTo(leafMap);
-    legend.addTo(leafMap);
-}
-
-//L.geoJSON(countriesData).addTo(leafMap)
-geoJson = L.geoJson(countriesData, {style, onEachFeature}).addTo(leafMap);
-
-//Infos
+var info = L.control();
 
 info.onAdd = function (map) {
     this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
@@ -113,12 +22,117 @@ info.onAdd = function (map) {
     return this._div;
 };
 
+// method that we will use to update the control based on feature properties passed
 info.update = function (props) {
-    this._div.innerHTML = '<h4>Infos</h4>' +  (props ?
-        '<b>' + props.name + '</b><br />' + alcoolData.filter(d => d.Entity === props.name)[0][sortBy] + 'morts.'
-        : 'Survoler un pays');
+    this._div.innerHTML = '<h4>Taux sur 100.000 habitants </h4>' +  (props ?
+        '<b>' + props.name + '</b><br />' + props.alcool +'</sup>'
+        : 'survoler sur pays ');
 };
 
-info.addTo(leafMap);
+info.addTo(map);
 
 
+// mettre des couleurs différentes en fonction du taux
+
+function getColor(d) {
+  return d > 18 ? '#081d58' :
+         d > 16  ? '#253494' :
+         d > 14  ? '#225ea8' :
+         d > 12  ? '#1d91c0' :
+         d > 10   ? '#41b6c4' :
+         d > 8   ? '#7fcdbb' :
+         d > 6   ? '#c7e9b4' :
+         d > 4   ? '#edf8b1' :
+         d > 2   ? '#ffffd9' :
+                    '#fcfcef';
+}
+
+
+
+
+
+
+
+
+
+
+
+function style(feature) {
+    return {
+        fillColor: getColor(feature.properties.alcool),
+        weight: 1,
+        opacity: 1,
+        color: 'grey',
+        fillOpacity: 0.8
+    };
+}
+
+L.geoJson(countries, {style: style}).addTo(map);
+
+
+// highlight, quand je passe par dessus avec la souris
+function highlightFeature(e) {
+  var layer = e.target;
+
+  layer.setStyle({
+      weight: 4,
+      color: '#666',
+      fillOpacity: 0.7,
+      fillColor:'yellow'
+  });
+
+
+
+  if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+      layer.bringToFront();
+  }
+  info.update(layer.feature.properties);
+}
+
+// en plus...
+
+var geojson;
+
+function resetHighlight(e) {
+  geojson.resetStyle(e.target);
+}
+
+function zoomToFeature(e) {
+  map.fitBounds(e.target.getBounds());
+  info.update();
+}
+
+function onEachFeature(feature, layer) {
+  layer.on({
+      mouseover: highlightFeature,
+      mouseout: resetHighlight,
+      click: zoomToFeature
+  });
+}
+
+geojson = L.geoJson(countries, {
+  style: style,
+  onEachFeature: onEachFeature
+}).addTo(map);
+
+
+//legende
+var legend = L.control({position: 'bottomright'});
+
+legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+        grades = [0, 2, 4, 6, 8, 10, 12, 14, 16, +18],
+        labels = [];
+
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (var i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColor(grades[i]+1) + '"></i> ' +
+            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+    }
+
+    return div;
+};
+
+legend.addTo(map);
