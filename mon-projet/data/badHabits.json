@@ -1,0 +1,1858 @@
+[
+  {
+    "Entity": "Entity",
+    "Code": "Code",
+    "Year": null,
+    "death_tabac": null,
+    "death_alcool": null,
+    "death_drug": null
+  },
+  {
+    "Entity": "Afghanistan",
+    "Code": "AFG",
+    "Year": 2017,
+    "death_tabac": 89.89175884,
+    "death_alcool": 0.683062376,
+    "death_drug": 1.808736591
+  },
+  {
+    "Entity": "Albania",
+    "Code": "ALB",
+    "Year": 2017,
+    "death_tabac": 98.2361137,
+    "death_alcool": 0.437420501,
+    "death_drug": 0.693550613
+  },
+  {
+    "Entity": "Algeria",
+    "Code": "DZA",
+    "Year": 2017,
+    "death_tabac": 60.41187263,
+    "death_alcool": 0.332952904,
+    "death_drug": 2.544690543
+  },
+  {
+    "Entity": "American Samoa",
+    "Code": "ASM",
+    "Year": 2017,
+    "death_tabac": 73.53796691,
+    "death_alcool": 0.676749698,
+    "death_drug": 0.93315379
+  },
+  {
+    "Entity": "Andean Latin America",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 29.6958716,
+    "death_alcool": 1.789477826,
+    "death_drug": 1.312792172
+  },
+  {
+    "Entity": "Andorra",
+    "Code": "AND",
+    "Year": 2017,
+    "death_tabac": 57.76983271,
+    "death_alcool": 1.548766846,
+    "death_drug": 2.343227134
+  },
+  {
+    "Entity": "Angola",
+    "Code": "AGO",
+    "Year": 2017,
+    "death_tabac": 87.57827391,
+    "death_alcool": 1.591525063,
+    "death_drug": 0.889448535
+  },
+  {
+    "Entity": "Antigua and Barbuda",
+    "Code": "ATG",
+    "Year": 2017,
+    "death_tabac": 38.4235104,
+    "death_alcool": 6.237552965,
+    "death_drug": 0.910440056
+  },
+  {
+    "Entity": "Argentina",
+    "Code": "ARG",
+    "Year": 2017,
+    "death_tabac": 96.50562687,
+    "death_alcool": 1.705537993,
+    "death_drug": 1.509010464
+  },
+  {
+    "Entity": "Armenia",
+    "Code": "ARM",
+    "Year": 2017,
+    "death_tabac": 116.9049207,
+    "death_alcool": 1.532459302,
+    "death_drug": 1.128132534
+  },
+  {
+    "Entity": "Australasia",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 51.28124277,
+    "death_alcool": 1.6922155,
+    "death_drug": 4.052346435
+  },
+  {
+    "Entity": "Australia",
+    "Code": "AUS",
+    "Year": 2017,
+    "death_tabac": 50.82643754,
+    "death_alcool": 1.80932285,
+    "death_drug": 4.492281311
+  },
+  {
+    "Entity": "Austria",
+    "Code": "AUT",
+    "Year": 2017,
+    "death_tabac": 63.64742712,
+    "death_alcool": 3.307956001,
+    "death_drug": 1.95738674
+  },
+  {
+    "Entity": "Azerbaijan",
+    "Code": "AZE",
+    "Year": 2017,
+    "death_tabac": 142.203312,
+    "death_alcool": 3.459120231,
+    "death_drug": 0.684854009
+  },
+  {
+    "Entity": "Bahamas",
+    "Code": "BHS",
+    "Year": 2017,
+    "death_tabac": 42.93432045,
+    "death_alcool": 5.040807137,
+    "death_drug": 1.09627891
+  },
+  {
+    "Entity": "Bahrain",
+    "Code": "BHR",
+    "Year": 2017,
+    "death_tabac": 45.8463997,
+    "death_alcool": 0.689316208,
+    "death_drug": 0.880833511
+  },
+  {
+    "Entity": "Bangladesh",
+    "Code": "BGD",
+    "Year": 2017,
+    "death_tabac": 80.06533729,
+    "death_alcool": 0.184877962,
+    "death_drug": 2.547746391
+  },
+  {
+    "Entity": "Barbados",
+    "Code": "BRB",
+    "Year": 2017,
+    "death_tabac": 34.30293608,
+    "death_alcool": 1.747775196,
+    "death_drug": 0.492724195
+  },
+  {
+    "Entity": "Belarus",
+    "Code": "BLR",
+    "Year": 2017,
+    "death_tabac": 134.8274856,
+    "death_alcool": 19.49167062,
+    "death_drug": 3.201843306
+  },
+  {
+    "Entity": "Belgium",
+    "Code": "BEL",
+    "Year": 2017,
+    "death_tabac": 84.0637359,
+    "death_alcool": 2.956368527,
+    "death_drug": 1.879766216
+  },
+  {
+    "Entity": "Belize",
+    "Code": "BLZ",
+    "Year": 2017,
+    "death_tabac": 51.52107824,
+    "death_alcool": 3.553495449,
+    "death_drug": 0.596949257
+  },
+  {
+    "Entity": "Benin",
+    "Code": "BEN",
+    "Year": 2017,
+    "death_tabac": 45.24862603,
+    "death_alcool": 2.445825735,
+    "death_drug": 1.452856756
+  },
+  {
+    "Entity": "Bermuda",
+    "Code": "BMU",
+    "Year": 2017,
+    "death_tabac": 48.71336609,
+    "death_alcool": 0.920696122,
+    "death_drug": 1.600578359
+  },
+  {
+    "Entity": "Bhutan",
+    "Code": "BTN",
+    "Year": 2017,
+    "death_tabac": 54.18762201,
+    "death_alcool": 1.646354109,
+    "death_drug": 0.564005949
+  },
+  {
+    "Entity": "Bolivia",
+    "Code": "BOL",
+    "Year": 2017,
+    "death_tabac": 49.83994108,
+    "death_alcool": 3.243133933,
+    "death_drug": 1.609375951
+  },
+  {
+    "Entity": "Bosnia and Herzegovina",
+    "Code": "BIH",
+    "Year": 2017,
+    "death_tabac": 141.7362511,
+    "death_alcool": 2.036536065,
+    "death_drug": 0.744707162
+  },
+  {
+    "Entity": "Botswana",
+    "Code": "BWA",
+    "Year": 2017,
+    "death_tabac": 74.19458052,
+    "death_alcool": 1.606033356,
+    "death_drug": 1.241029793
+  },
+  {
+    "Entity": "Brazil",
+    "Code": "BRA",
+    "Year": 2017,
+    "death_tabac": 74.85027719,
+    "death_alcool": 4.523351253,
+    "death_drug": 0.977098706
+  },
+  {
+    "Entity": "Brunei",
+    "Code": "BRN",
+    "Year": 2017,
+    "death_tabac": 104.5636837,
+    "death_alcool": 0.362097178,
+    "death_drug": 0.784587665
+  },
+  {
+    "Entity": "Bulgaria",
+    "Code": "BGR",
+    "Year": 2017,
+    "death_tabac": 141.2078719,
+    "death_alcool": 1.028816159,
+    "death_drug": 0.891973322
+  },
+  {
+    "Entity": "Burkina Faso",
+    "Code": "BFA",
+    "Year": 2017,
+    "death_tabac": 36.26698362,
+    "death_alcool": 2.683899523,
+    "death_drug": 1.115509666
+  },
+  {
+    "Entity": "Burundi",
+    "Code": "BDI",
+    "Year": 2017,
+    "death_tabac": 67.48647767,
+    "death_alcool": 2.409521925,
+    "death_drug": 0.51682909
+  },
+  {
+    "Entity": "Cambodia",
+    "Code": "KHM",
+    "Year": 2017,
+    "death_tabac": 128.8397073,
+    "death_alcool": 1.400671937,
+    "death_drug": 0.411251116
+  },
+  {
+    "Entity": "Cameroon",
+    "Code": "CMR",
+    "Year": 2017,
+    "death_tabac": 45.91375531,
+    "death_alcool": 2.635712223,
+    "death_drug": 3.214775842
+  },
+  {
+    "Entity": "Canada",
+    "Code": "CAN",
+    "Year": 2017,
+    "death_tabac": 70.30139157,
+    "death_alcool": 2.31808183,
+    "death_drug": 4.949341954
+  },
+  {
+    "Entity": "Cape Verde",
+    "Code": "CPV",
+    "Year": 2017,
+    "death_tabac": 29.29560126,
+    "death_alcool": 1.841065152,
+    "death_drug": 3.334861243
+  },
+  {
+    "Entity": "Caribbean",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 75.48223452,
+    "death_alcool": 3.066225555,
+    "death_drug": 0.998513862
+  },
+  {
+    "Entity": "Central African Republic",
+    "Code": "CAF",
+    "Year": 2017,
+    "death_tabac": 112.5704388,
+    "death_alcool": 2.088963129,
+    "death_drug": 1.128620725
+  },
+  {
+    "Entity": "Central Asia",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 110.4369165,
+    "death_alcool": 4.06066176,
+    "death_drug": 1.801683047
+  },
+  {
+    "Entity": "Central Europe",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 114.4845918,
+    "death_alcool": 4.42621902,
+    "death_drug": 0.834894408
+  },
+  {
+    "Entity": "Central Europe, Eastern Europe, and Central Asia",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 124.7398527,
+    "death_alcool": 9.599643411,
+    "death_drug": 3.031816333
+  },
+  {
+    "Entity": "Central Latin America",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 45.35886123,
+    "death_alcool": 3.521813793,
+    "death_drug": 1.007098028
+  },
+  {
+    "Entity": "Central Sub-Saharan Africa",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 59.92487801,
+    "death_alcool": 1.615204948,
+    "death_drug": 1.043837558
+  },
+  {
+    "Entity": "Chad",
+    "Code": "TCD",
+    "Year": 2017,
+    "death_tabac": 31.58328252,
+    "death_alcool": 1.764461951,
+    "death_drug": 1.171018516
+  },
+  {
+    "Entity": "Chile",
+    "Code": "CHL",
+    "Year": 2017,
+    "death_tabac": 44.70387644,
+    "death_alcool": 3.032238838,
+    "death_drug": 0.604145669
+  },
+  {
+    "Entity": "China",
+    "Code": "CHN",
+    "Year": 2017,
+    "death_tabac": 120.2175572,
+    "death_alcool": 1.102623507,
+    "death_drug": 1.278642145
+  },
+  {
+    "Entity": "Colombia",
+    "Code": "COL",
+    "Year": 2017,
+    "death_tabac": 35.97617594,
+    "death_alcool": 0.225271778,
+    "death_drug": 0.447684381
+  },
+  {
+    "Entity": "Comoros",
+    "Code": "COM",
+    "Year": 2017,
+    "death_tabac": 41.30663157,
+    "death_alcool": 1.807579193,
+    "death_drug": 0.654034983
+  },
+  {
+    "Entity": "Congo",
+    "Code": "COG",
+    "Year": 2017,
+    "death_tabac": 67.39426961,
+    "death_alcool": 2.033114486,
+    "death_drug": 1.780325039
+  },
+  {
+    "Entity": "Costa Rica",
+    "Code": "CRI",
+    "Year": 2017,
+    "death_tabac": 45.06319657,
+    "death_alcool": 2.245190634,
+    "death_drug": 0.984703394
+  },
+  {
+    "Entity": "Cote d'Ivoire",
+    "Code": "CIV",
+    "Year": 2017,
+    "death_tabac": 59.95804263,
+    "death_alcool": 2.498241279,
+    "death_drug": 1.92833551
+  },
+  {
+    "Entity": "Croatia",
+    "Code": "HRV",
+    "Year": 2017,
+    "death_tabac": 105.0277661,
+    "death_alcool": 3.387685642,
+    "death_drug": 1.460759507
+  },
+  {
+    "Entity": "Cuba",
+    "Code": "CUB",
+    "Year": 2017,
+    "death_tabac": 97.76632196,
+    "death_alcool": 3.956026713,
+    "death_drug": 0.449127769
+  },
+  {
+    "Entity": "Cyprus",
+    "Code": "CYP",
+    "Year": 2017,
+    "death_tabac": 77.61202628,
+    "death_alcool": 0.530348691,
+    "death_drug": 1.102616525
+  },
+  {
+    "Entity": "Czech Republic",
+    "Code": "CZE",
+    "Year": 2017,
+    "death_tabac": 97.95603547,
+    "death_alcool": 2.884034335,
+    "death_drug": 0.995178822
+  },
+  {
+    "Entity": "Democratic Republic of Congo",
+    "Code": "COD",
+    "Year": 2017,
+    "death_tabac": 48.23186082,
+    "death_alcool": 1.548280508,
+    "death_drug": 1.013430919
+  },
+  {
+    "Entity": "Denmark",
+    "Code": "DNK",
+    "Year": 2017,
+    "death_tabac": 97.11957723,
+    "death_alcool": 8.59231751,
+    "death_drug": 3.768315522
+  },
+  {
+    "Entity": "Djibouti",
+    "Code": "DJI",
+    "Year": 2017,
+    "death_tabac": 68.21835964,
+    "death_alcool": 2.311883372,
+    "death_drug": 0.808152956
+  },
+  {
+    "Entity": "Dominica",
+    "Code": "DMA",
+    "Year": 2017,
+    "death_tabac": 40.56674657,
+    "death_alcool": 5.677121648,
+    "death_drug": 1.312301733
+  },
+  {
+    "Entity": "Dominican Republic",
+    "Code": "DOM",
+    "Year": 2017,
+    "death_tabac": 85.93314443,
+    "death_alcool": 1.63461444,
+    "death_drug": 1.193141346
+  },
+  {
+    "Entity": "East Asia",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 119.1648779,
+    "death_alcool": 1.11131069,
+    "death_drug": 1.279512679
+  },
+  {
+    "Entity": "Eastern Europe",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 134.3019496,
+    "death_alcool": 14.32947089,
+    "death_drug": 4.785262151
+  },
+  {
+    "Entity": "Eastern Sub-Saharan Africa",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 54.49073442,
+    "death_alcool": 2.349058808,
+    "death_drug": 0.688828926
+  },
+  {
+    "Entity": "Ecuador",
+    "Code": "ECU",
+    "Year": 2017,
+    "death_tabac": 33.13788959,
+    "death_alcool": 2.738354717,
+    "death_drug": 1.411818084
+  },
+  {
+    "Entity": "Egypt",
+    "Code": "EGY",
+    "Year": 2017,
+    "death_tabac": 122.6921234,
+    "death_alcool": 0.246577408,
+    "death_drug": 0.125843498
+  },
+  {
+    "Entity": "El Salvador",
+    "Code": "SLV",
+    "Year": 2017,
+    "death_tabac": 38.82060686,
+    "death_alcool": 16.38353991,
+    "death_drug": 1.052801372
+  },
+  {
+    "Entity": "England",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 65.32346613,
+    "death_alcool": 2.502353801,
+    "death_drug": 3.757420159
+  },
+  {
+    "Entity": "Equatorial Guinea",
+    "Code": "GNQ",
+    "Year": 2017,
+    "death_tabac": 39.50671447,
+    "death_alcool": 1.657794313,
+    "death_drug": 1.122401311
+  },
+  {
+    "Entity": "Eritrea",
+    "Code": "ERI",
+    "Year": 2017,
+    "death_tabac": 48.88004036,
+    "death_alcool": 3.635878775,
+    "death_drug": 1.052962769
+  },
+  {
+    "Entity": "Estonia",
+    "Code": "EST",
+    "Year": 2017,
+    "death_tabac": 81.79090725,
+    "death_alcool": 12.11290494,
+    "death_drug": 7.143489796
+  },
+  {
+    "Entity": "Ethiopia",
+    "Code": "ETH",
+    "Year": 2017,
+    "death_tabac": 25.32089741,
+    "death_alcool": 1.86402799,
+    "death_drug": 0.508443618
+  },
+  {
+    "Entity": "Fiji",
+    "Code": "FJI",
+    "Year": 2017,
+    "death_tabac": 121.5020213,
+    "death_alcool": 0.226569532,
+    "death_drug": 0.545479037
+  },
+  {
+    "Entity": "Finland",
+    "Code": "FIN",
+    "Year": 2017,
+    "death_tabac": 45.18420836,
+    "death_alcool": 6.97948832,
+    "death_drug": 4.724441429
+  },
+  {
+    "Entity": "France",
+    "Code": "FRA",
+    "Year": 2017,
+    "death_tabac": 57.40011156,
+    "death_alcool": 3.701432818,
+    "death_drug": 1.802816789
+  },
+  {
+    "Entity": "Gabon",
+    "Code": "GAB",
+    "Year": 2017,
+    "death_tabac": 62.18501318,
+    "death_alcool": 2.074887804,
+    "death_drug": 1.731307611
+  },
+  {
+    "Entity": "Gambia",
+    "Code": "GMB",
+    "Year": 2017,
+    "death_tabac": 72.57536087,
+    "death_alcool": 1.986226634,
+    "death_drug": 1.840055545
+  },
+  {
+    "Entity": "Georgia",
+    "Code": "GEO",
+    "Year": 2017,
+    "death_tabac": 116.2025421,
+    "death_alcool": 1.431355128,
+    "death_drug": 1.563080625
+  },
+  {
+    "Entity": "Germany",
+    "Code": "DEU",
+    "Year": 2017,
+    "death_tabac": 73.9993414,
+    "death_alcool": 4.633635698,
+    "death_drug": 2.064063917
+  },
+  {
+    "Entity": "Ghana",
+    "Code": "GHA",
+    "Year": 2017,
+    "death_tabac": 40.92843416,
+    "death_alcool": 2.242903584,
+    "death_drug": 2.72283128
+  },
+  {
+    "Entity": "Greece",
+    "Code": "GRC",
+    "Year": 2017,
+    "death_tabac": 100.0396022,
+    "death_alcool": 0.243506743,
+    "death_drug": 1.907594153
+  },
+  {
+    "Entity": "Greenland",
+    "Code": "GRL",
+    "Year": 2017,
+    "death_tabac": 185.65073,
+    "death_alcool": 12.43988909,
+    "death_drug": 1.487115219
+  },
+  {
+    "Entity": "Grenada",
+    "Code": "GRD",
+    "Year": 2017,
+    "death_tabac": 56.43999484,
+    "death_alcool": 3.077756343,
+    "death_drug": 1.31965819
+  },
+  {
+    "Entity": "Guam",
+    "Code": "GUM",
+    "Year": 2017,
+    "death_tabac": 63.8437173,
+    "death_alcool": 1.184662713,
+    "death_drug": 1.001228495
+  },
+  {
+    "Entity": "Guatemala",
+    "Code": "GTM",
+    "Year": 2017,
+    "death_tabac": 36.91625368,
+    "death_alcool": 12.66753919,
+    "death_drug": 2.347778945
+  },
+  {
+    "Entity": "Guinea",
+    "Code": "GIN",
+    "Year": 2017,
+    "death_tabac": 42.39267416,
+    "death_alcool": 1.968618649,
+    "death_drug": 1.59070058
+  },
+  {
+    "Entity": "Guinea-Bissau",
+    "Code": "GNB",
+    "Year": 2017,
+    "death_tabac": 44.26223792,
+    "death_alcool": 2.202784309,
+    "death_drug": 1.937828927
+  },
+  {
+    "Entity": "Guyana",
+    "Code": "GUY",
+    "Year": 2017,
+    "death_tabac": 67.23038257,
+    "death_alcool": 5.638378105,
+    "death_drug": 1.533447771
+  },
+  {
+    "Entity": "Haiti",
+    "Code": "HTI",
+    "Year": 2017,
+    "death_tabac": 62.34454384,
+    "death_alcool": 3.627278885,
+    "death_drug": 0.749858755
+  },
+  {
+    "Entity": "High SDI",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 67.8086663,
+    "death_alcool": 2.547829744,
+    "death_drug": 6.408960439
+  },
+  {
+    "Entity": "High-income",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 66.34426309,
+    "death_alcool": 2.383653292,
+    "death_drug": 6.871724785
+  },
+  {
+    "Entity": "High-income Asia Pacific",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 52.53028143,
+    "death_alcool": 0.647298913,
+    "death_drug": 0.288898803
+  },
+  {
+    "Entity": "High-middle SDI",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 108.0201119,
+    "death_alcool": 3.107054328,
+    "death_drug": 1.763970316
+  },
+  {
+    "Entity": "Honduras",
+    "Code": "HND",
+    "Year": 2017,
+    "death_tabac": 70.26640326,
+    "death_alcool": 5.397523673,
+    "death_drug": 2.044304324
+  },
+  {
+    "Entity": "Hungary",
+    "Code": "HUN",
+    "Year": 2017,
+    "death_tabac": 126.1236642,
+    "death_alcool": 3.25720949,
+    "death_drug": 0.464947237
+  },
+  {
+    "Entity": "Iceland",
+    "Code": "ISL",
+    "Year": 2017,
+    "death_tabac": 58.22541354,
+    "death_alcool": 2.29544074,
+    "death_drug": 3.385261878
+  },
+  {
+    "Entity": "India",
+    "Code": "IND",
+    "Year": 2017,
+    "death_tabac": 91.57628926,
+    "death_alcool": 2.318877548,
+    "death_drug": 0.930127099
+  },
+  {
+    "Entity": "Indonesia",
+    "Code": "IDN",
+    "Year": 2017,
+    "death_tabac": 116.4797803,
+    "death_alcool": 0.313556326,
+    "death_drug": 0.326561187
+  },
+  {
+    "Entity": "Iran",
+    "Code": "IRN",
+    "Year": 2017,
+    "death_tabac": 59.50252218,
+    "death_alcool": 0.329207094,
+    "death_drug": 3.684175037
+  },
+  {
+    "Entity": "Iraq",
+    "Code": "IRQ",
+    "Year": 2017,
+    "death_tabac": 54.05199986,
+    "death_alcool": 0.24625281,
+    "death_drug": 1.506821874
+  },
+  {
+    "Entity": "Ireland",
+    "Code": "IRL",
+    "Year": 2017,
+    "death_tabac": 76.07659241,
+    "death_alcool": 1.601591207,
+    "death_drug": 3.435883136
+  },
+  {
+    "Entity": "Israel",
+    "Code": "ISR",
+    "Year": 2017,
+    "death_tabac": 52.5020783,
+    "death_alcool": 0.591714324,
+    "death_drug": 0.695814855
+  },
+  {
+    "Entity": "Italy",
+    "Code": "ITA",
+    "Year": 2017,
+    "death_tabac": 55.23594671,
+    "death_alcool": 0.389453041,
+    "death_drug": 0.801112673
+  },
+  {
+    "Entity": "Jamaica",
+    "Code": "JAM",
+    "Year": 2017,
+    "death_tabac": 74.98659254,
+    "death_alcool": 0.528828656,
+    "death_drug": 0.558040505
+  },
+  {
+    "Entity": "Japan",
+    "Code": "JPN",
+    "Year": 2017,
+    "death_tabac": 52.15777396,
+    "death_alcool": 0.427464599,
+    "death_drug": 0.329816801
+  },
+  {
+    "Entity": "Jordan",
+    "Code": "JOR",
+    "Year": 2017,
+    "death_tabac": 65.82876443,
+    "death_alcool": 0.266411272,
+    "death_drug": 1.136024521
+  },
+  {
+    "Entity": "Kazakhstan",
+    "Code": "KAZ",
+    "Year": 2017,
+    "death_tabac": 118.9759132,
+    "death_alcool": 8.692704567,
+    "death_drug": 4.231554328
+  },
+  {
+    "Entity": "Kenya",
+    "Code": "KEN",
+    "Year": 2017,
+    "death_tabac": 50.34730039,
+    "death_alcool": 2.264358826,
+    "death_drug": 0.494888115
+  },
+  {
+    "Entity": "Kiribati",
+    "Code": "KIR",
+    "Year": 2017,
+    "death_tabac": 266.1345977,
+    "death_alcool": 0.456836921,
+    "death_drug": 0.612831495
+  },
+  {
+    "Entity": "Kuwait",
+    "Code": "KWT",
+    "Year": 2017,
+    "death_tabac": 42.30328714,
+    "death_alcool": 0.207385529,
+    "death_drug": 0.61634993
+  },
+  {
+    "Entity": "Kyrgyzstan",
+    "Code": "KGZ",
+    "Year": 2017,
+    "death_tabac": 88.87143962,
+    "death_alcool": 6.847602891,
+    "death_drug": 2.39976358
+  },
+  {
+    "Entity": "Laos",
+    "Code": "LAO",
+    "Year": 2017,
+    "death_tabac": 141.1888983,
+    "death_alcool": 1.734428488,
+    "death_drug": 0.514814209
+  },
+  {
+    "Entity": "Latin America and Caribbean",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 58.71879003,
+    "death_alcool": 3.726099088,
+    "death_drug": 1.012742727
+  },
+  {
+    "Entity": "Latvia",
+    "Code": "LVA",
+    "Year": 2017,
+    "death_tabac": 105.8184643,
+    "death_alcool": 10.69072139,
+    "death_drug": 2.269039685
+  },
+  {
+    "Entity": "Lebanon",
+    "Code": "LBN",
+    "Year": 2017,
+    "death_tabac": 113.5742388,
+    "death_alcool": 0.328771104,
+    "death_drug": 4.318502338
+  },
+  {
+    "Entity": "Lesotho",
+    "Code": "LSO",
+    "Year": 2017,
+    "death_tabac": 156.3510336,
+    "death_alcool": 2.627486252,
+    "death_drug": 2.16769038
+  },
+  {
+    "Entity": "Liberia",
+    "Code": "LBR",
+    "Year": 2017,
+    "death_tabac": 50.45470127,
+    "death_alcool": 2.029731395,
+    "death_drug": 1.547611158
+  },
+  {
+    "Entity": "Libya",
+    "Code": "LBY",
+    "Year": 2017,
+    "death_tabac": 62.18566953,
+    "death_alcool": 0.596845204,
+    "death_drug": 8.199758127
+  },
+  {
+    "Entity": "Lithuania",
+    "Code": "LTU",
+    "Year": 2017,
+    "death_tabac": 101.0045372,
+    "death_alcool": 9.239072049,
+    "death_drug": 3.971817805
+  },
+  {
+    "Entity": "Low SDI",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 94.94837984,
+    "death_alcool": 1.703686677,
+    "death_drug": 1.324899303
+  },
+  {
+    "Entity": "Low-middle SDI",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 94.72221337,
+    "death_alcool": 2.394220553,
+    "death_drug": 1.132076853
+  },
+  {
+    "Entity": "Luxembourg",
+    "Code": "LUX",
+    "Year": 2017,
+    "death_tabac": 67.78226523,
+    "death_alcool": 3.038910223,
+    "death_drug": 2.78075852
+  },
+  {
+    "Entity": "Macedonia",
+    "Code": "MKD",
+    "Year": 2017,
+    "death_tabac": 125.8452258,
+    "death_alcool": 0.672135327,
+    "death_drug": 0.478259768
+  },
+  {
+    "Entity": "Madagascar",
+    "Code": "MDG",
+    "Year": 2017,
+    "death_tabac": 54.29157552,
+    "death_alcool": 1.955816277,
+    "death_drug": 0.532648237
+  },
+  {
+    "Entity": "Malawi",
+    "Code": "MWI",
+    "Year": 2017,
+    "death_tabac": 54.61345689,
+    "death_alcool": 2.713578899,
+    "death_drug": 0.681360633
+  },
+  {
+    "Entity": "Malaysia",
+    "Code": "MYS",
+    "Year": 2017,
+    "death_tabac": 99.55747769,
+    "death_alcool": 1.575910578,
+    "death_drug": 1.496871232
+  },
+  {
+    "Entity": "Maldives",
+    "Code": "MDV",
+    "Year": 2017,
+    "death_tabac": 65.14218307,
+    "death_alcool": 0.28142702,
+    "death_drug": 0.602506517
+  },
+  {
+    "Entity": "Mali",
+    "Code": "MLI",
+    "Year": 2017,
+    "death_tabac": 34.60573664,
+    "death_alcool": 1.274936104,
+    "death_drug": 0.829544788
+  },
+  {
+    "Entity": "Malta",
+    "Code": "MLT",
+    "Year": 2017,
+    "death_tabac": 69.10718452,
+    "death_alcool": 0.634974485,
+    "death_drug": 1.609409989
+  },
+  {
+    "Entity": "Marshall Islands",
+    "Code": "MHL",
+    "Year": 2017,
+    "death_tabac": 130.5187038,
+    "death_alcool": 1.495920149,
+    "death_drug": 1.355155314
+  },
+  {
+    "Entity": "Mauritania",
+    "Code": "MRT",
+    "Year": 2017,
+    "death_tabac": 26.34414353,
+    "death_alcool": 1.450852548,
+    "death_drug": 1.533347974
+  },
+  {
+    "Entity": "Mauritius",
+    "Code": "MUS",
+    "Year": 2017,
+    "death_tabac": 69.96643467,
+    "death_alcool": 4.650661538,
+    "death_drug": 1.214079433
+  },
+  {
+    "Entity": "Mexico",
+    "Code": "MEX",
+    "Year": 2017,
+    "death_tabac": 47.72622386,
+    "death_alcool": 3.971748466,
+    "death_drug": 1.123186155
+  },
+  {
+    "Entity": "Micronesia (country)",
+    "Code": "FSM",
+    "Year": 2017,
+    "death_tabac": 116.2040408,
+    "death_alcool": 1.140395757,
+    "death_drug": 0.957478615
+  },
+  {
+    "Entity": "Middle SDI",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 95.08054352,
+    "death_alcool": 1.649731878,
+    "death_drug": 1.199137024
+  },
+  {
+    "Entity": "Moldova",
+    "Code": "MDA",
+    "Year": 2017,
+    "death_tabac": 112.2906222,
+    "death_alcool": 9.292130082,
+    "death_drug": 1.206181127
+  },
+  {
+    "Entity": "Mongolia",
+    "Code": "MNG",
+    "Year": 2017,
+    "death_tabac": 136.9997837,
+    "death_alcool": 13.87031068,
+    "death_drug": 1.282693811
+  },
+  {
+    "Entity": "Montenegro",
+    "Code": "MNE",
+    "Year": 2017,
+    "death_tabac": 169.0407861,
+    "death_alcool": 1.413261039,
+    "death_drug": 2.147992635
+  },
+  {
+    "Entity": "Morocco",
+    "Code": "MAR",
+    "Year": 2017,
+    "death_tabac": 59.05597812,
+    "death_alcool": 0.368601178,
+    "death_drug": 1.882400367
+  },
+  {
+    "Entity": "Mozambique",
+    "Code": "MOZ",
+    "Year": 2017,
+    "death_tabac": 90.9997098,
+    "death_alcool": 3.899751101,
+    "death_drug": 1.586168588
+  },
+  {
+    "Entity": "Myanmar",
+    "Code": "MMR",
+    "Year": 2017,
+    "death_tabac": 175.0551054,
+    "death_alcool": 1.500902142,
+    "death_drug": 0.662928699
+  },
+  {
+    "Entity": "Namibia",
+    "Code": "NAM",
+    "Year": 2017,
+    "death_tabac": 89.26940988,
+    "death_alcool": 2.434991164,
+    "death_drug": 1.371286012
+  },
+  {
+    "Entity": "Nepal",
+    "Code": "NPL",
+    "Year": 2017,
+    "death_tabac": 124.9786114,
+    "death_alcool": 1.160377082,
+    "death_drug": 0.394920465
+  },
+  {
+    "Entity": "Netherlands",
+    "Code": "NLD",
+    "Year": 2017,
+    "death_tabac": 87.7176378,
+    "death_alcool": 1.864263101,
+    "death_drug": 1.067678209
+  },
+  {
+    "Entity": "New Zealand",
+    "Code": "NZL",
+    "Year": 2017,
+    "death_tabac": 53.65833744,
+    "death_alcool": 1.063253583,
+    "death_drug": 1.547576271
+  },
+  {
+    "Entity": "Nicaragua",
+    "Code": "NIC",
+    "Year": 2017,
+    "death_tabac": 33.37594071,
+    "death_alcool": 7.271933499,
+    "death_drug": 0.543641273
+  },
+  {
+    "Entity": "Niger",
+    "Code": "NER",
+    "Year": 2017,
+    "death_tabac": 24.04398606,
+    "death_alcool": 1.45748781,
+    "death_drug": 0.806476636
+  },
+  {
+    "Entity": "Nigeria",
+    "Code": "NGA",
+    "Year": 2017,
+    "death_tabac": 17.71823834,
+    "death_alcool": 2.035326109,
+    "death_drug": 1.775520269
+  },
+  {
+    "Entity": "North Africa and Middle East",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 76.43395884,
+    "death_alcool": 0.335718428,
+    "death_drug": 1.792018746
+  },
+  {
+    "Entity": "North America",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 75.05084363,
+    "death_alcool": 3.148837779,
+    "death_drug": 17.3535203
+  },
+  {
+    "Entity": "North Korea",
+    "Code": "PRK",
+    "Year": 2017,
+    "death_tabac": 117.8129974,
+    "death_alcool": 1.296600238,
+    "death_drug": 1.252966718
+  },
+  {
+    "Entity": "Northern Ireland",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 64.52364146,
+    "death_alcool": 3.401385262,
+    "death_drug": 3.013093729
+  },
+  {
+    "Entity": "Northern Mariana Islands",
+    "Code": "MNP",
+    "Year": 2017,
+    "death_tabac": 54.05580726,
+    "death_alcool": 2.528664676,
+    "death_drug": 0.638984989
+  },
+  {
+    "Entity": "Norway",
+    "Code": "NOR",
+    "Year": 2017,
+    "death_tabac": 60.00948624,
+    "death_alcool": 3.330420066,
+    "death_drug": 4.547151501
+  },
+  {
+    "Entity": "Oceania",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 206.1107332,
+    "death_alcool": 1.204986556,
+    "death_drug": 0.526357158
+  },
+  {
+    "Entity": "Oman",
+    "Code": "OMN",
+    "Year": 2017,
+    "death_tabac": 51.07297136,
+    "death_alcool": 0.282805353,
+    "death_drug": 0.398404753
+  },
+  {
+    "Entity": "Pakistan",
+    "Code": "PAK",
+    "Year": 2017,
+    "death_tabac": 128.6634632,
+    "death_alcool": 1.042338573,
+    "death_drug": 0.664312454
+  },
+  {
+    "Entity": "Palestine",
+    "Code": "PSE",
+    "Year": 2017,
+    "death_tabac": 49.91136595,
+    "death_alcool": 0.307545891,
+    "death_drug": 0.893780238
+  },
+  {
+    "Entity": "Panama",
+    "Code": "PAN",
+    "Year": 2017,
+    "death_tabac": 38.56573761,
+    "death_alcool": 0.706428608,
+    "death_drug": 0.652589044
+  },
+  {
+    "Entity": "Papua New Guinea",
+    "Code": "PNG",
+    "Year": 2017,
+    "death_tabac": 244.8949709,
+    "death_alcool": 1.361537221,
+    "death_drug": 0.461524603
+  },
+  {
+    "Entity": "Paraguay",
+    "Code": "PRY",
+    "Year": 2017,
+    "death_tabac": 85.88360054,
+    "death_alcool": 4.118625893,
+    "death_drug": 0.408307471
+  },
+  {
+    "Entity": "Peru",
+    "Code": "PER",
+    "Year": 2017,
+    "death_tabac": 22.79649502,
+    "death_alcool": 0.893240807,
+    "death_drug": 1.19851217
+  },
+  {
+    "Entity": "Philippines",
+    "Code": "PHL",
+    "Year": 2017,
+    "death_tabac": 140.1331251,
+    "death_alcool": 1.631883069,
+    "death_drug": 0.680385449
+  },
+  {
+    "Entity": "Poland",
+    "Code": "POL",
+    "Year": 2017,
+    "death_tabac": 108.8817663,
+    "death_alcool": 8.269125737,
+    "death_drug": 0.624296416
+  },
+  {
+    "Entity": "Portugal",
+    "Code": "PRT",
+    "Year": 2017,
+    "death_tabac": 50.88182691,
+    "death_alcool": 1.637107279,
+    "death_drug": 0.803376191
+  },
+  {
+    "Entity": "Puerto Rico",
+    "Code": "PRI",
+    "Year": 2017,
+    "death_tabac": 25.92508406,
+    "death_alcool": 2.48072252,
+    "death_drug": 3.050415086
+  },
+  {
+    "Entity": "Qatar",
+    "Code": "QAT",
+    "Year": 2017,
+    "death_tabac": 38.36612414,
+    "death_alcool": 0.368414745,
+    "death_drug": 0.571375455
+  },
+  {
+    "Entity": "Romania",
+    "Code": "ROU",
+    "Year": 2017,
+    "death_tabac": 111.9259673,
+    "death_alcool": 2.163443942,
+    "death_drug": 1.196939147
+  },
+  {
+    "Entity": "Russia",
+    "Code": "RUS",
+    "Year": 2017,
+    "death_tabac": 130.2112147,
+    "death_alcool": 14.41633892,
+    "death_drug": 5.476380633
+  },
+  {
+    "Entity": "Rwanda",
+    "Code": "RWA",
+    "Year": 2017,
+    "death_tabac": 83.59330312,
+    "death_alcool": 2.810929575,
+    "death_drug": 0.477160666
+  },
+  {
+    "Entity": "Saint Lucia",
+    "Code": "LCA",
+    "Year": 2017,
+    "death_tabac": 54.41995586,
+    "death_alcool": 4.310669096,
+    "death_drug": 0.883286324
+  },
+  {
+    "Entity": "Saint Vincent and the Grenadines",
+    "Code": "VCT",
+    "Year": 2017,
+    "death_tabac": 50.97440259,
+    "death_alcool": 7.452965986,
+    "death_drug": 1.116221846
+  },
+  {
+    "Entity": "Samoa",
+    "Code": "WSM",
+    "Year": 2017,
+    "death_tabac": 140.4268724,
+    "death_alcool": 0.606762077,
+    "death_drug": 0.618806441
+  },
+  {
+    "Entity": "Sao Tome and Principe",
+    "Code": "STP",
+    "Year": 2017,
+    "death_tabac": 40.31985686,
+    "death_alcool": 1.867390043,
+    "death_drug": 1.146457109
+  },
+  {
+    "Entity": "Saudi Arabia",
+    "Code": "SAU",
+    "Year": 2017,
+    "death_tabac": 34.81449363,
+    "death_alcool": 0.363636182,
+    "death_drug": 1.763162293
+  },
+  {
+    "Entity": "Scotland",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 104.6753696,
+    "death_alcool": 4.740084453,
+    "death_drug": 8.936486566
+  },
+  {
+    "Entity": "Senegal",
+    "Code": "SEN",
+    "Year": 2017,
+    "death_tabac": 33.89544366,
+    "death_alcool": 1.611104204,
+    "death_drug": 1.437824741
+  },
+  {
+    "Entity": "Serbia",
+    "Code": "SRB",
+    "Year": 2017,
+    "death_tabac": 152.9469705,
+    "death_alcool": 2.849600848,
+    "death_drug": 0.887483594
+  },
+  {
+    "Entity": "Seychelles",
+    "Code": "SYC",
+    "Year": 2017,
+    "death_tabac": 85.07882193,
+    "death_alcool": 0.832773956,
+    "death_drug": 0.784815789
+  },
+  {
+    "Entity": "Sierra Leone",
+    "Code": "SLE",
+    "Year": 2017,
+    "death_tabac": 70.66273869,
+    "death_alcool": 1.761172247,
+    "death_drug": 1.493296732
+  },
+  {
+    "Entity": "Singapore",
+    "Code": "SGP",
+    "Year": 2017,
+    "death_tabac": 35.63097321,
+    "death_alcool": 0.174744001,
+    "death_drug": 0.247135063
+  },
+  {
+    "Entity": "Slovakia",
+    "Code": "SVK",
+    "Year": 2017,
+    "death_tabac": 90.19926022,
+    "death_alcool": 3.193511261,
+    "death_drug": 0.686366348
+  },
+  {
+    "Entity": "Slovenia",
+    "Code": "SVN",
+    "Year": 2017,
+    "death_tabac": 69.14600069,
+    "death_alcool": 5.477073837,
+    "death_drug": 1.255609019
+  },
+  {
+    "Entity": "Solomon Islands",
+    "Code": "SLB",
+    "Year": 2017,
+    "death_tabac": 168.7374538,
+    "death_alcool": 0.971117131,
+    "death_drug": 0.442156744
+  },
+  {
+    "Entity": "Somalia",
+    "Code": "SOM",
+    "Year": 2017,
+    "death_tabac": 80.40854087,
+    "death_alcool": 2.339104206,
+    "death_drug": 0.508143945
+  },
+  {
+    "Entity": "South Africa",
+    "Code": "ZAF",
+    "Year": 2017,
+    "death_tabac": 69.72214681,
+    "death_alcool": 1.383182363,
+    "death_drug": 1.329977981
+  },
+  {
+    "Entity": "South Asia",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 93.90210984,
+    "death_alcool": 1.989622929,
+    "death_drug": 1.052678637
+  },
+  {
+    "Entity": "South Korea",
+    "Code": "KOR",
+    "Year": 2017,
+    "death_tabac": 57.67559427,
+    "death_alcool": 1.225926299,
+    "death_drug": 0.218656443
+  },
+  {
+    "Entity": "South Sudan",
+    "Code": "SSD",
+    "Year": 2017,
+    "death_tabac": 68.30875543,
+    "death_alcool": 2.144866236,
+    "death_drug": 0.402904111
+  },
+  {
+    "Entity": "Southeast Asia",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 106.8417922,
+    "death_alcool": 1.134191137,
+    "death_drug": 0.675424087
+  },
+  {
+    "Entity": "Southeast Asia, East Asia, and Oceania",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 117.3638339,
+    "death_alcool": 1.120747289,
+    "death_drug": 1.155726193
+  },
+  {
+    "Entity": "Southern Latin America",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 81.21319148,
+    "death_alcool": 2.14048883,
+    "death_drug": 1.206975177
+  },
+  {
+    "Entity": "Southern Sub-Saharan Africa",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 80.16507126,
+    "death_alcool": 1.396954445,
+    "death_drug": 1.529247156
+  },
+  {
+    "Entity": "Spain",
+    "Code": "ESP",
+    "Year": 2017,
+    "death_tabac": 65.14343429,
+    "death_alcool": 0.607720905,
+    "death_drug": 1.225212345
+  },
+  {
+    "Entity": "Sri Lanka",
+    "Code": "LKA",
+    "Year": 2017,
+    "death_tabac": 54.60952927,
+    "death_alcool": 2.047084954,
+    "death_drug": 0.845678628
+  },
+  {
+    "Entity": "Sub-Saharan Africa",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 48.8768082,
+    "death_alcool": 2.027316397,
+    "death_drug": 1.279363293
+  },
+  {
+    "Entity": "Sudan",
+    "Code": "SDN",
+    "Year": 2017,
+    "death_tabac": 15.85311236,
+    "death_alcool": 0.459323386,
+    "death_drug": 1.543660311
+  },
+  {
+    "Entity": "Suriname",
+    "Code": "SUR",
+    "Year": 2017,
+    "death_tabac": 82.81229445,
+    "death_alcool": 3.330895322,
+    "death_drug": 1.375029979
+  },
+  {
+    "Entity": "Swaziland",
+    "Code": "SWZ",
+    "Year": 2017,
+    "death_tabac": 100.2284075,
+    "death_alcool": 2.697185638,
+    "death_drug": 2.560604774
+  },
+  {
+    "Entity": "Sweden",
+    "Code": "SWE",
+    "Year": 2017,
+    "death_tabac": 58.05134838,
+    "death_alcool": 2.336215537,
+    "death_drug": 3.668460287
+  },
+  {
+    "Entity": "Switzerland",
+    "Code": "CHE",
+    "Year": 2017,
+    "death_tabac": 53.12136525,
+    "death_alcool": 1.766369412,
+    "death_drug": 2.050636589
+  },
+  {
+    "Entity": "Syria",
+    "Code": "SYR",
+    "Year": 2017,
+    "death_tabac": 81.06232443,
+    "death_alcool": 0.522104318,
+    "death_drug": 1.750910242
+  },
+  {
+    "Entity": "Taiwan",
+    "Code": "TWN",
+    "Year": 2017,
+    "death_tabac": 71.61987392,
+    "death_alcool": 1.467417811,
+    "death_drug": 1.51642231
+  },
+  {
+    "Entity": "Tajikistan",
+    "Code": "TJK",
+    "Year": 2017,
+    "death_tabac": 85.27113038,
+    "death_alcool": 2.343316952,
+    "death_drug": 0.455345127
+  },
+  {
+    "Entity": "Tanzania",
+    "Code": "TZA",
+    "Year": 2017,
+    "death_tabac": 69.51563527,
+    "death_alcool": 2.345059109,
+    "death_drug": 0.921273516
+  },
+  {
+    "Entity": "Thailand",
+    "Code": "THA",
+    "Year": 2017,
+    "death_tabac": 58.4009586,
+    "death_alcool": 2.515397235,
+    "death_drug": 0.930922852
+  },
+  {
+    "Entity": "Timor",
+    "Code": "TLS",
+    "Year": 2017,
+    "death_tabac": 108.9246043,
+    "death_alcool": 1.278026704,
+    "death_drug": 0.409556145
+  },
+  {
+    "Entity": "Togo",
+    "Code": "TGO",
+    "Year": 2017,
+    "death_tabac": 44.11068662,
+    "death_alcool": 2.058587127,
+    "death_drug": 2.03693945
+  },
+  {
+    "Entity": "Tonga",
+    "Code": "TON",
+    "Year": 2017,
+    "death_tabac": 105.4222792,
+    "death_alcool": 0.828430363,
+    "death_drug": 0.663223766
+  },
+  {
+    "Entity": "Trinidad and Tobago",
+    "Code": "TTO",
+    "Year": 2017,
+    "death_tabac": 55.97311224,
+    "death_alcool": 2.16805654,
+    "death_drug": 0.986172594
+  },
+  {
+    "Entity": "Tropical Latin America",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 75.08169942,
+    "death_alcool": 4.509476376,
+    "death_drug": 0.960947482
+  },
+  {
+    "Entity": "Tunisia",
+    "Code": "TUN",
+    "Year": 2017,
+    "death_tabac": 94.17382122,
+    "death_alcool": 0.232351539,
+    "death_drug": 1.805819049
+  },
+  {
+    "Entity": "Turkey",
+    "Code": "TUR",
+    "Year": 2017,
+    "death_tabac": 89.08162151,
+    "death_alcool": 0.243133345,
+    "death_drug": 0.608610483
+  },
+  {
+    "Entity": "Turkmenistan",
+    "Code": "TKM",
+    "Year": 2017,
+    "death_tabac": 98.13742939,
+    "death_alcool": 2.891900344,
+    "death_drug": 1.282100416
+  },
+  {
+    "Entity": "Uganda",
+    "Code": "UGA",
+    "Year": 2017,
+    "death_tabac": 43.84270944,
+    "death_alcool": 2.214571174,
+    "death_drug": 0.558696334
+  },
+  {
+    "Entity": "Ukraine",
+    "Code": "UKR",
+    "Year": 2017,
+    "death_tabac": 153.5581795,
+    "death_alcool": 13.88313115,
+    "death_drug": 3.318774466
+  },
+  {
+    "Entity": "United Arab Emirates",
+    "Code": "ARE",
+    "Year": 2017,
+    "death_tabac": 65.70075169,
+    "death_alcool": 0.813769897,
+    "death_drug": 6.109299306
+  },
+  {
+    "Entity": "United Kingdom",
+    "Code": "GBR",
+    "Year": 2017,
+    "death_tabac": 69.49560898,
+    "death_alcool": 2.750807555,
+    "death_drug": 4.232587535
+  },
+  {
+    "Entity": "United States",
+    "Code": "USA",
+    "Year": 2017,
+    "death_tabac": 75.60550275,
+    "death_alcool": 3.24167928,
+    "death_drug": 18.749939
+  },
+  {
+    "Entity": "United States Virgin Islands",
+    "Code": "VIR",
+    "Year": 2017,
+    "death_tabac": 44.44692968,
+    "death_alcool": 8.473448421,
+    "death_drug": 2.311652635
+  },
+  {
+    "Entity": "Uruguay",
+    "Code": "URY",
+    "Year": 2017,
+    "death_tabac": 89.16342953,
+    "death_alcool": 2.538606165,
+    "death_drug": 0.779305505
+  },
+  {
+    "Entity": "Uzbekistan",
+    "Code": "UZB",
+    "Year": 2017,
+    "death_tabac": 99.12904106,
+    "death_alcool": 1.034207967,
+    "death_drug": 1.162687063
+  },
+  {
+    "Entity": "Vanuatu",
+    "Code": "VUT",
+    "Year": 2017,
+    "death_tabac": 145.9839397,
+    "death_alcool": 1.552471647,
+    "death_drug": 0.546182541
+  },
+  {
+    "Entity": "Venezuela",
+    "Code": "VEN",
+    "Year": 2017,
+    "death_tabac": 59.09733539,
+    "death_alcool": 0.696865718,
+    "death_drug": 0.77035361
+  },
+  {
+    "Entity": "Vietnam",
+    "Code": "VNM",
+    "Year": 2017,
+    "death_tabac": 99.31713746,
+    "death_alcool": 0.959072294,
+    "death_drug": 1.211881224
+  },
+  {
+    "Entity": "Wales",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 79.87356728,
+    "death_alcool": 3.157246572,
+    "death_drug": 5.471929623
+  },
+  {
+    "Entity": "Western Europe",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 66.12163526,
+    "death_alcool": 2.634522391,
+    "death_drug": 2.136049673
+  },
+  {
+    "Entity": "Western Sub-Saharan Africa",
+    "Code": "",
+    "Year": 2017,
+    "death_tabac": 30.73839732,
+    "death_alcool": 2.068645668,
+    "death_drug": 1.804481939
+  },
+  {
+    "Entity": "World",
+    "Code": "OWID_WRL",
+    "Year": 2017,
+    "death_tabac": 90.11410508,
+    "death_alcool": 2.260976763,
+    "death_drug": 2.084100675
+  },
+  {
+    "Entity": "Yemen",
+    "Code": "YEM",
+    "Year": 2017,
+    "death_tabac": 103.0833773,
+    "death_alcool": 0.412563763,
+    "death_drug": 1.632091392
+  },
+  {
+    "Entity": "Zambia",
+    "Code": "ZMB",
+    "Year": 2017,
+    "death_tabac": 76.9770639,
+    "death_alcool": 2.797370028,
+    "death_drug": 1.009323188
+  },
+  {
+    "Entity": "Zimbabwe",
+    "Code": "ZWE",
+    "Year": 2017,
+    "death_tabac": 138.5222673,
+    "death_alcool": 0.919957613,
+    "death_drug": 2.453069403
+  }
+]
