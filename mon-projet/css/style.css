@@ -71,7 +71,7 @@ h1 {
 }
 
 .button {
-    background-color: #ffc77d;
+    background-color: #fa8e00;
     border: none;
     color: white;
     padding: 15px 20px;
@@ -81,4 +81,17 @@ h1 {
     font-size: 15px;
     margin: 4px 2px;
     cursor: pointer;
+    
     }
+    .button:hover {
+        background-color: #fc0000;
+        border: none;
+        color: white;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 15px;
+        margin: 4px 2px;
+        cursor: pointer;
+        }

@@ -12,16 +12,16 @@ L.tileLayer('https://api.maptiler.com/maps/positron/{z}/{x}/{y}.png?key=eiKhCNn6
 }).addTo(map)
 // style pour la carte "alcool"
 function getAlcoolColor(d) {
-    return d > 18 ? '#081d58' :
-        d > 16 ? '#253494' :
-            d > 14 ? '#225ea8' :
-                d > 12 ? '#1d91c0' :
-                    d > 10 ? '#41b6c4' :
-                        d > 8 ? '#7fcdbb' :
-                            d > 6 ? '#c7e9b4' :
-                                d > 4 ? '#edf8b1' :
-                                    d > 2 ? '#ffffd9' :
-                                        '#fcfcef';
+    return d > 18 ? '#7f0000' :
+        d > 16 ? '#b30000' :
+            d > 14 ? '#d7301f' :
+                d > 12 ? '#ef6548' :
+                    d > 10 ? '#fc8d59' :
+                        d > 8 ? '#fdbb84' :
+                            d > 6 ? '#fdd49e' :
+                                d > 4 ? '#fee8c8' :
+                                    d > 2 ? '#fff7ec' :
+                                        '#ffffff';
 }
 function alcoolStyle(feature) {
     return {
@@ -35,19 +35,16 @@ function alcoolStyle(feature) {
 
 // style pour la carte "drogues"
 function getDrugColor(d) {
-    return d > 15 ? '#081d58' :
-        d > 10 ? '#253494' :
-            d > 5 ? '#225ea8' :
-                d > 4 ? '#1d91c0' :
-                    d > 3 ? '#41b6c4' :
-                        d > 2 ? '#7fcdbb' :
-                            d > 1 ? '#c7e9b4' :
-                                d > 0.5 ? '#edf8b1' :
-                                    '#ffffd9';
+    return d > 15 ? '#662506' :
+        d > 10 ? '#993404' :
+            d > 5 ? '#cc4c02' :
+                d > 4 ? '#ec7014' :
+                    d > 3 ? '#fe9929' :
+                        d > 2 ? '#fec44f' :
+                            d > 1 ? '#fee391' :
+                                d > 0.5 ? '#fff7bc' :
+                                    '#ffffe5';
 }
-
-
-
 function drugStyle(feature) {
     return {
         fillColor: getDrugColor(feature.properties.drug),
@@ -59,15 +56,15 @@ function drugStyle(feature) {
 }
 // style pour la carte "tabac"
 function getTabacColor(d) {
-    return d > 250 ? '#081d58' :
-        d > 225 ? '#253494' :
-            d > 200 ? '#225ea8' :
-                d > 175 ? '#1d91c0' :
-                    d > 150 ? '#41b6c4' :
-                        d > 125 ? '#7fcdbb' :
-                            d > 100 ? '#c7e9b4' :
-                                d > 75 ? '#edf8b1' :
-                                    d > 59 ? '#ffffd9' :
+    return d > 250 ? '#800026' :
+        d > 225 ? '#bd0026' :
+            d > 200 ? '#e31a1c' :
+                d > 175 ? '#fc4e2a' :
+                    d > 150 ? '#fd8d3c' :
+                        d > 125 ? '#feb24c' :
+                            d > 100 ? '#fed976' :
+                                d > 75 ? '#ffeda0' :
+                                    d > 50 ? '#ffffcc' :
                                         d > 25 ? '#fcfcef' :
                                             '#FFFFFF';
 }
@@ -83,24 +80,22 @@ function tabacStyle(feature) {
 }
 // style pour la carte "tous"
 function getAllColor(d) {
-    return d > 250 ? '#081d58' :
-        d > 225 ? '#253494' :
-            d > 200 ? '#225ea8' :
-                d > 175 ? '#1d91c0' :
-                    d > 150 ? '#41b6c4' :
-                        d > 125 ? '#7fcdbb' :
-                            d > 100 ? '#c7e9b4' :
-                                d > 75 ? '#edf8b1' :
-                                    d > 59 ? '#ffffd9' :
+    return d > 250 ? '#67000d' :
+        d > 225 ? '#a50f15' :
+            d > 200 ? '#cb181d' :
+                d > 175 ? '#ef3b2c' :
+                    d > 150 ? '#fb6a4a' :
+                        d > 125 ? '#fc9272' :
+                            d > 100 ? '#fcbba1' :
+                                d > 75 ? '#fee0d2' :
+                                    d > 59 ? '#fff5f0' :
                                         d > 25 ? '#fcfcef' :
                                             '#FFFFFF';
 }
 
-                            
-
 function allStyle(feature) {
     return {
-        fillColor: getAllColor(feature.properties.tabac), // à changer en fonction du document
+        fillColor: getAllColor(feature.properties.drug + feature.properties.alcool + feature.properties.tabac), // à changer en fonction du document
         weight: 1,
         opacity: 1,
         color: 'black',
@@ -110,13 +105,15 @@ function allStyle(feature) {
 
 // tous les pays
 // par défaut, le style affiché quand la page charge, est le style "alcool"
-const pays = L.geoJson(countries, { style: alcoolStyle }).addTo(map)
+const pays = L.geoJson(countries, {style: alcoolStyle, onEachFeature }).addTo(map)
 // les boutons qui ont tous la classe "button"
 const buttons = Array.from(document.getElementsByClassName('button'))
+// la carte affichée, "alcool" par défaut
+let mapStyle = 'deathAlcool'
 // quand un bouton est cliqué
 const onButtonClick = e => {
-    // recupérer la valeur du bouton
-    const mapStyle = e.target.value
+  // recupérer la valeur du bouton
+  mapStyle = e.target.value
     // style des pays dépendant du bouton
     if (mapStyle === 'deathAlcool') {
         pays.eachLayer(layer => {
@@ -150,37 +147,102 @@ buttons.map(button => button.addEventListener('click', onButtonClick))
 
 //////////////////////////////////////////////// INFOS ////////////////////////////////////////////////
 
-//pop up pays et leurs données
-
+// 
 var info = L.control();
-
 info.onAdd = function (map) {
     this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
     this.update();
     return this._div;
 };
-
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
-    this._div.innerHTML = '<h4>Taux sur 100.000 habitants en 2017</h4>' +  (props ?
-        '<b>' + props.name + '</b><br />' + props.alcool +'</sup>'
-        : 'survoler sur pays ');
-};
+  let html = ''
+  if (mapStyle === 'deathAlcool') {
+    html = '<h4>Taux sur 100.000 habitants en 2017</h4>'
+      + (props
+        ? '<b>' + props.name + '</b><br />' + props.alcool +'</sup>'
+        : 'Survoler un pays ')
+  }
+  if (mapStyle === 'deathDrug') {
+    html = '<h4>Taux sur 100.000 habitants en 2017</h4>'
+      +  (props
+        ? '<b>' + props.name + '</b><br />' + props.drug +'</sup>'
+        : 'Survoler un pays ')
+  }
+  if (mapStyle === 'deathTabac') {
+    html = '<h4>Taux sur 100.000 habitants en 2017</h4>'
+      +  (props
+        ? '<b>' + props.name + '</b><br />' + props.tabac +'</sup>'
+        : 'Survoler un pays ')
+  }
+  if (mapStyle === 'deathAll') {
+    html = '<h4>Taux sur 100.000 habitants en 2017</h4>'
+      +  (props
+        ? '<b>' + props.name + '</b><br />' + (props.alcool + props.drug + props.tabac) +'</sup>'
+        : 'Survoler un pays ')
+  }
+  this._div.innerHTML = html
+}
 
 info.addTo(map);
 
 
+//////////////////////////////////////////////// FONCTION SURVOLE AVEC LA SOURIS ////////////////////////////////////////////////
+
+function highlightFeature(e) {
+  var layer = e.target
+  layer.setStyle({
+      weight: 4,
+  })
+  info.update(layer.feature.properties)
+  if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+    layer.bringToFront();
+  }
+}
+function resetHighlight(e) {
+  var layer = e.target
+  layer.setStyle({
+    weight: 1,
+  })
+  info.update()
+}
+function zoomToFeature(e) {
+  var layer = e.target
+  map.fitBounds(layer.getBounds())
+  info.update(layer.feature.properties)
+}
+function onEachFeature(feature, layer) {
+  layer.on({
+      mouseover: highlightFeature,
+      mouseout: resetHighlight,
+      click: zoomToFeature
+  });
+}
+
 //////////////////////////////////////////////// LEGENDE ////////////////////////////////////////////////
 
-//legende
+//legende  // ne marche pas
 const legend = L.control({position: 'bottomright'});
 
 legend.onAdd = function (map) {
 
-    const div = L.DomUtil.create('div', 'info legend'),
+    const div = L.DomUtil.create('div', 'info legend')
+    if (mapStyle === 'deathAlcool') {
         grades = [0, 2, 4, 6, 8, 10, 12, 14, 16, +18],
         labels = [];
-
+    }
+    if (mapStyle === 'deathDrug'){
+        grades = [0, 0.5, 1, 2, 3, 4, 5, 10, +15],
+        labels = [];
+    }
+    if (mapStyle === 'deathTabac'){
+        grades = [0, 25, 50, 75, 100, 125, 150, 175, 200, 225, +250],
+        labels = [];
+    }
+    if (mapStyle === 'deathAll'){
+        grades = [0, 25, 50, 75, 100, 125, 150, 175, 200, 225, +250],
+        labels = [];
+    }
     // loop through our density intervals and generate a label with a colored square for each interval
     for (const i = 0; i < grades.length; i++) {
         div.innerHTML +=
@@ -194,50 +256,3 @@ legend.onAdd = function (map) {
 legend.addTo(map);
 
 
-//////////////////////////////////////////////// FONCTION SURVOLE AVEC LA SOURIS ////////////////////////////////////////////////
-
-// L.geoJson(countries, { style: style }).addTo(map);
-// // highlight, quand je passe par dessus avec la souris
-// function highlightFeature(e) {
-//     const layer = e.target;
-
-//     layer.setStyle({
-//         weight: 4,
-//         color: '#666',
-//         fillOpacity: 0.7,
-//         fillColor: 'pink'
-//     });
-
-
-
-//     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-//         layer.bringToFront();
-//     }
-//     info.update(layer.feature.properties);
-// }
-
-// // en plus...
-
-// const geojson;
-
-// function resetHighlight(e) {
-//     geojson.resetStyle(e.target);
-// }
-
-// function zoomToFeature(e) {
-//     map.fitBounds(e.target.getBounds());
-//     info.update();
-// }
-
-// function onEachFeature(feature, layer) {
-//     layer.on({
-//         mouseover: highlightFeature,
-//         mouseout: resetHighlight,
-//         click: zoomToFeature
-//     });
-// }
-
-// geojson = L.geoJson(countries, {
-//     style: style,
-//     onEachFeature: onEachFeature
-// }).addTo(map);
