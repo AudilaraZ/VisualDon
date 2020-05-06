@@ -1,7 +1,13 @@
 import countries from '../data/countries_badhabits.json'
 import L from 'leaflet'
+
+//Import de la bibliothéque billboard pour le graphique en montagne
+import "billboard.js/dist/theme/insight.css";
+import bb from "billboard.js";
+
 // la carte
-const map = L.map('map').setView([20, 0], 2);
+const map = L.map('map').setView([50, 0], 2);
+
 // le fond de carte
 L.tileLayer('https://api.maptiler.com/maps/positron/{z}/{x}/{y}.png?key=eiKhCNn6PEp5PueYXKV5', {
     tileSize: 512,
@@ -10,6 +16,7 @@ L.tileLayer('https://api.maptiler.com/maps/positron/{z}/{x}/{y}.png?key=eiKhCNn6
     attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>',
     crossOrigin: true
 }).addTo(map)
+
 // style pour la carte "alcool"
 function getAlcoolColor(d) {
     return d > 18 ? '#7f0000' :
@@ -106,36 +113,80 @@ function allStyle(feature) {
 // tous les pays
 // par défaut, le style affiché quand la page charge, est le style "alcool"
 const pays = L.geoJson(countries, {style: alcoolStyle, onEachFeature }).addTo(map)
+
 // les boutons qui ont tous la classe "button"
 const buttons = Array.from(document.getElementsByClassName('button'))
 // la carte affichée, "alcool" par défaut
 let mapStyle = 'deathAlcool'
 // quand un bouton est cliqué
 const onButtonClick = e => {
-  // recupérer la valeur du bouton
+
+    //Change le style des boutons lors du click
+    $('.button').removeClass('active')
+    $(e.target).addClass('active')
+
+    //On cache la carte ET les autres graphiques
+    $('#map').hide();
+    $('#batons').hide();
+
+    // recupérer la valeur du bouton
   mapStyle = e.target.value
     // style des pays dépendant du bouton
     if (mapStyle === 'deathAlcool') {
+        //on affiche la carte
+        $('#map').show();
+
         pays.eachLayer(layer => {
             layer.setStyle(alcoolStyle(layer.feature))
         })
+        map.removeControl(legendTabac);
+        map.removeControl(legendDrugs);
+        map.removeControl(legendAll)
+        legendAlcool.addTo(map)
     }
     if (mapStyle === 'deathDrug') {
+        //on affiche la carte
+        $('#map').show();
+
         pays.eachLayer(layer => {
             layer.setStyle(drugStyle(layer.feature))
         })
+        map.removeControl(legendTabac);
+        map.removeControl(legendAlcool);
+        map.removeControl(legendAll)
+        legendDrugs.addTo(map)
     }
     if (mapStyle === 'deathTabac') {
+        //on affiche la carte
+        $('#map').show();
+
         pays.eachLayer(layer => {
             layer.setStyle(tabacStyle(layer.feature))
         })
+        map.removeControl(legendAlcool)
+        map.removeControl(legendDrugs)
+        map.removeControl(legendAll)
+        legendTabac.addTo(map)
     }
     if (mapStyle === 'deathAll') {
+        //on affiche la carte
+        $('#map').show();
+
         pays.eachLayer(layer => {
             layer.setStyle(allStyle(layer.feature))
         })
+        map.removeControl(legendTabac);
+        map.removeControl(legendDrugs)
+        map.removeControl(legendAlcool)
+
+        legendAll.addTo(map)
     }
     if (mapStyle === 'deathYear') { // mettre le graphique en batons
+        // On affiche les graphiques 
+        $('#batons').show();
+        // on génère le graphique
+        generateAreaChart();
+        
         pays.eachLayer(layer => {
             layer.setStyle(allStyle(layer.feature))
         })
@@ -221,38 +272,221 @@ function onEachFeature(feature, layer) {
 
 //////////////////////////////////////////////// LEGENDE ////////////////////////////////////////////////
 
-//legende  // ne marche pas
-const legend = L.control({position: 'bottomright'});
+// legende alcool
+const legendAlcool = L.control({position: 'bottomright'});
 
-legend.onAdd = function (map) {
+legendAlcool.onAdd = function (map) {
 
-    const div = L.DomUtil.create('div', 'info legend')
-    if (mapStyle === 'deathAlcool') {
-        grades = [0, 2, 4, 6, 8, 10, 12, 14, 16, +18],
-        labels = [];
-    }
-    if (mapStyle === 'deathDrug'){
-        grades = [0, 0.5, 1, 2, 3, 4, 5, 10, +15],
-        labels = [];
-    }
-    if (mapStyle === 'deathTabac'){
-        grades = [0, 25, 50, 75, 100, 125, 150, 175, 200, 225, +250],
-        labels = [];
-    }
-    if (mapStyle === 'deathAll'){
-        grades = [0, 25, 50, 75, 100, 125, 150, 175, 200, 225, +250],
-        labels = [];
-    }
+    const div = L.DomUtil.create('div', 'info legend'),
+    grades = [0, 2, 4, 6, 8, 10, 12, 14, 16, +18],
+    labels = [];
+    
     // loop through our density intervals and generate a label with a colored square for each interval
-    for (const i = 0; i < grades.length; i++) {
+    for (let i = 0; i < grades.length; i++) {
         div.innerHTML +=
-            '<i style="background:' + getColor(grades[i]+1) + '"></i> ' +
+            '<i style="background:' + getAlcoolColor(grades[i]+1) + '"></i> ' +
             grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
     }
-
     return div;
 };
 
-legend.addTo(map);
+// legende tabac 
+const legendTabac = L.control({position: 'bottomright'});
+legendTabac.onAdd = function (map) {
+
+    const div = L.DomUtil.create('div', 'info legend'),
+    grades = [0, 25, 50, 75, 100, 125, 150, 175, 200, 225, +250],
+    labels = [];
+    
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (let i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getTabacColor(grades[i]+1) + '"></i> ' +
+            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+    }
+    return div;
+};
+
+// legende drogue 
+const legendDrugs = L.control({position: 'bottomright'});
+legendDrugs.onAdd = function (map) {
+
+    const div = L.DomUtil.create('div', 'info legend'),
+    grades = [0, 0.5, 1, 2, 3, 4, 5, 10, +15],
+    labels = [];
+    
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (let i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getDrugColor(grades[i]+1) + '"></i> ' +
+            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+    }
+    return div;
+};
+
+// legende tous 
+const legendAll = L.control({position: 'bottomright'});
+legendAll.onAdd = function (map) {
+
+    const div = L.DomUtil.create('div', 'info legend'),
+    grades = [0, 25, 50, 75, 100, 125, 150, 175, 200, 225, +250],
+    labels = [];
+    
+    // loop through our density intervals and generate a label with a colored square for each interval
+    for (let i = 0; i < grades.length; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getAllColor(grades[i]+1) + '"></i> ' +
+            grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] + '<br>' : '+');
+    }
+    return div;
+};
 
 
+// Alcool par défaut, on ajoute la légende au chargement de la carte
+legendAlcool.addTo(map)
+
+////////////////////////////////////// Generation du graphique billboard.js ////////////////////////////////
+const DATA = [
+    { year: "1990" },
+    { year: "1991" },
+    { year: "1992" },
+    { year: "1993" },
+    { year: "1994" },
+    { year: "1995" },
+    { year: "1996" },
+    { year: "1997" },
+    { year: "1998" },
+    { year: "1999" },
+    { year: "2000" },
+    { year: "2001" },
+    { year: "2002" },
+    { year: "2003" },
+    { year: "2004" },
+    { year: "2005" },
+    { year: "2006" },
+    { year: "2007" },
+    { year: "2008" },
+    { year: "2009" },
+    { year: "2010" },
+    { year: "2011" },
+    { year: "2012" },
+    { year: "2013" },
+    { year: "2014" },
+    { year: "2015" },
+    { year: "2016" },
+    { year: "2017" },
+  ];
+  
+  function generateAreaChart() {
+    bb.generate({
+      data: {
+        columns: [
+          [
+            "tabac",
+            29027.92585,
+            28489.88086,
+            28677.60723,
+            28428.57672,
+            28200.04234,
+            27877.88386,
+            27351.6876,
+            26834.44965,
+            26347.2029,
+            25887.35314,
+            25369.54062,
+            24851.84591,
+            24486.98045,
+            24105.83182,
+            23583.62836,
+            23194.80609,
+            22667.9713,
+            22202.19351,
+            21753.31452,
+            21293.33447,
+            20863.79862,
+            20395.26144,
+            19963.33595,
+            19550.78339,
+            19203.70146,
+            19012.17897,
+            18694.33539,
+            18387.06416,
+          ],
+          [
+            "alcool",
+            668.0317632,
+            688.6658877,
+            717.392197,
+            761.7423148,
+            797.600775,
+            799.6462131,
+            781.0009084,
+            769.4116583,
+            765.5678629,
+            761.0841438,
+            754.8731861,
+            754.8411779,
+            753.2149947,
+            753.8591633,
+            755.6844245,
+            762.693898,
+            747.9095074,
+            733.9723821,
+            718.3536375,
+            695.7013282,
+            682.7025922,
+            665.624862,
+            653.0674215,
+            645.3606724,
+            641.4964589,
+            644.3024266,
+            643.5195291,
+            644.677159,
+          ],
+          [
+            "drogue",
+            235.5034344,
+            245.9247537,
+            258.9356179,
+            272.8258837,
+            290.6181377,
+            305.8292326,
+            312.8982491,
+            324.543641,
+            335.7984497,
+            343.0405834,
+            351.5697883,
+            351.4683228,
+            351.3224653,
+            350.9293804,
+            352.1207717,
+            356.455282,
+            358.4343813,
+            361.7306591,
+            361.9517784,
+            359.8991461,
+            359.7417027,
+            360.1070079,
+            361.9576956,
+            366.335747,
+            373.5834474,
+            384.9451324,
+            399.6140103,
+            407.7574097,
+          ],
+        ],
+        types: {
+          tabac: "area-spline",
+          alcool: "area-spline",
+          drogue: "area-spline",
+        },
+      },
+      axis: {
+        x: {
+          type: "category",
+          categories: DATA.map(({ year }) => year),
+        },
+      },
+      bindto: "#areaChart",
+    });
+  }
