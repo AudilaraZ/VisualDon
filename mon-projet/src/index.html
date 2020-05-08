@@ -30,13 +30,14 @@
 <body>
   <div id="top">
     <!--Logo HEIG-VD-->
-      <img id="logo" src="logo.png">
-      <h1>Causes de mortalité</h1>
+    <img id="logo" src="logo.png">
+    <h1>CAUSES DE MORTALITÉ</h1>
   </div>
   <div class="introduction">
-    <p>Dans ce site, il a été choisi d'examiner les trois plus mauvaises habitudes répandues dans monde: l'alcool, le tabac et les drogues.</br>
+    <p>Dans ce site, il a été choisi d'examiner les trois plus mauvaises habitudes répandues dans monde: l'alcool, le
+      tabac et les drogues.</br>
       En tant que jeunes, des fois, on ne regarde pas ces thématiques avec le juste poids.</br>
-      Avec nos graphiques on aimerait donc montrer aux personnes de notre génération les terribles effets</br> 
+      Avec nos graphiques on aimerait donc montrer aux personnes de notre génération les terribles effets</br>
       de ces 3 mauvaises habitudes et leur faire changer d'avis, surtout sur le tabac.</p>
   </div>
 
@@ -48,18 +49,29 @@
     <button class="button" type="button" value="deathYear">DE 1990 À 2017</button>
   </div>
 
-  <section id="map">    
-    <!-- <div class="description"> NE MARCHE PAS  REGARDER DANS INDEX.JS
-      <p value="textAlcool">
-          Dans cette carte géographique, on remarque que les pays ayant un problème de mortalité par rapport avec l'alcool sont positionnés pour la majorité au nord-est de l'Europe.
-          Ces pays ont la réputation d'être de grands buveurs, mais aussi de grands producteurs de spiritueux comme vodka et eaux-de-vie de fruit.
-          Aussi dans les pays de l’Amérique centrale, il est possible de voir le même phénomène dû à la culture de la création de tequila et autre spiritueux. 
+  <!--CETTE PARTIE NE PMARCHE PAS!!!! PAREIL DANS LA SECTION TEXTED DANS INDEX.JS-->
+  <div class="description">
+      <p id="texteAlcool">
+        Dans cette carte géographique, on remarque que les pays ayant un problème de mortalité par rapport avec l'alcool
+        sont positionnés pour la majorité au nord-est de l'Europe.</br>
+        Ces pays ont la réputation d'être de grands buveurs, mais aussi de grands producteurs de spiritueux comme vodka et
+        eaux-de-vie de fruit.</br>
+        Aussi dans les pays de l’Amérique centrale, il est possible de voir le même phénomène dû à la culture de la
+        création de tequila et autre spiritueux.
       </p>
-      <p value="textTabac">Blabala</p>
-      <p value="textDrug"></p>
-      <p value="textAll"></p>
-      <p value="textdeathYear"></p> 
-    </div>  -->
+      <p id="texteTabac">Dans cette carte géographique, on remarque que rares sont les pays qui n'ont pas de problèmes avec l'alcool.</br>
+        Les pays ayant le taux de mortalité les plus élevés sont positionnés pour la majorité au nord-est de l'Europe et en Asie.</br>
+        Le Groenland, Myanmar et la Papouasie Nouvelle Guinée ont les plus hauts taux.</p>
+      <p id="texteDrug"></p>
+      <p id="texteAll"></p>
+      <p id="textedeathYear">Dans ces graphiques, il est possible de trouver l'évolution des taux de mortalité mondiale selons les 3 mauvaise habitudes depuis le 1990 jusqu'a le 2017.</br>
+        Dans le premier, les échelles varient en fonction des données visualisées.</br>
+        On remarque que le tabac a des taux, au fil du temps, beaucoup plus hauts que la drogue et l'alcool, ces dernières ont des taux qui sont très bas, voir enexistants.</br>
+        Mais en réalité, avec le deuxième graphique, on s'apperçoit mieux que les taux pour la drogue et l'alcool continuent d'augmenter avec les années, et à l'inverse le tabac continue de diminuer. </p>
+    </div>
+
+  <section id="map">
+
     <!--Les cartes pour l'alcool, le tabac, la drogue et tous sont présentes ici.-->
   </section>
 
@@ -69,16 +81,17 @@
       <!-- Graphique  avec les batons qui bougent bar chart race-->
       <div id="observablehq-462b18f0"></div>
       <script type="module">
-      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-      import define from "https://api.observablehq.com/@michelle-po/bar-chart-race/2.js?v=3";
-      const inspect = Inspector.into("#observablehq-462b18f0");
-      (new Runtime).module(define, name => (name === "chart") && inspect());
+        import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/@michelle-po/bar-chart-race/2.js?v=3";
+        const inspect = Inspector.into("#observablehq-462b18f0");
+        (new Runtime).module(define, name => (name === "chart") && inspect());
       </script>
-    <div id="areaChart"></div> <!-- Graphique avec les montagnes area chart-->
+      <div id="areaChart"></div> <!-- Graphique avec les montagnes area chart-->
   </section>
   <footer>
-      <p>Site fait avec 💙 par Majka Voide, Michelle Ponti et Audrey Zeugin dans le cadre du cours de visualisation de données </p>
-    </footer>
+    <p>Site fait avec 💙 par Majka Voide, Michelle Ponti et Audrey Zeugin dans le cadre du cours de visualisation de
+      données </p>
+  </footer>
 </body>
 <script src="index.js"></script>
 

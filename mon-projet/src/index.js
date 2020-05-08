@@ -182,7 +182,7 @@ const onButtonClick = e => {
 
         legendAll.addTo(map)
     }
-    if (mapStyle === 'deathYear') { // mettre le graphique en batons
+    if (mapStyle === 'deathYear') { // mettre le graphique en batons qui bougent et l'area chart
         // On affiche les graphiques 
         $('#batons').show();
         // on génère le graphique
@@ -349,14 +349,36 @@ legendAlcool.addTo(map)
 
 //////////////////////////////////////////////// TEXTE ////////////////////////////////////////////////
 
-// NE MARCHE PAS A FAIRE!!!!
+///CETTE PARTIE NE PMARCHE PAS!!!! 
 
-// const textAlcool = ;
-// textAlcool.onAdd = function (){
-//     div.innerHTML +=
-// }
-
-// textAlcool.addTo('description')
+// if (mapStyle === 'deathlcool') {
+    
+//     const textedrogues = ;
+//     textedrogues.onAdd = function (){
+//     div.innerHTML += }
+//     textedrogues.addTo('description')}
+        
+//     if (mapStyle === 'deathTabac') {
+        
+//     const textealcool = ;
+//     textealcool.onAdd = function (){
+//     div.innerHTML += }
+//     textealcool.addTo('description')}
+            
+            
+//     if (mapStyle === 'deathDrug') {
+        
+//     const textetabac = ;
+//     textetabac.onAdd = function (){
+//     div.innerHTML += }
+//     textetabac.addTo('description')}
+        
+//         if (mapStyle === 'deathAll') {
+        
+//     const texteall = ;
+//     textall.onAdd = function (){
+//     div.innerHTML += }
+//     textdrogues.addTo('description')}
 
 ////////////////////////////////////// Generation du graphique billboard.js ////////////////////////////////
 const DATA = [
