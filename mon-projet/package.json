@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "deploy": "surge dist --audreyzeugin.surge.sh"
+    "deploy": "surge dist --causesmortalite.surge.sh"
   },
   "keywords": [],
   "author": "",

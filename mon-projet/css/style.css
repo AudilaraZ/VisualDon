@@ -1,5 +1,5 @@
 body {
-  height: 120vh;
+  height: 145vh;
   margin:0;
   display: flex;
   flex-direction: column;
@@ -125,6 +125,8 @@ footer {
 
 #batons {
   font: 30px Arial, Helvetica, sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
  }
 
  #areaChart{

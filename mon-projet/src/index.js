@@ -9,7 +9,7 @@ import bb from "billboard.js";
 $('.description').hide();
 
 // la carte
-const map = L.map('map').setView([50, 0], 2);
+const map = L.map('map').setView([20, 0], 2);
 
 // le fond de carte
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
