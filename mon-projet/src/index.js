@@ -502,11 +502,16 @@ function generateAreaChart() {
 
 ///////////////////////////////////////////////////////// Generation du graphique Bar chart race Observable /////////////////////////////////////////////////////////////
 
+
+
+
+
+
 //   <div id="observablehq-6ef2d9cb"></div>
 // <script type="module">
 // import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
 // import define from "https://api.observablehq.com/@michelle-po/bar-chart-race.js?v=3";
-const inspect = Inspector.into("#observablehq-6ef2d9cb");
+const inspect = Inspector.into("#observablehq-76018bc9");
 (new Runtime).module(define, name => (name === "chart") && inspect());
 // </script>
 
