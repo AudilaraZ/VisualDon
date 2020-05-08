@@ -1,5 +1,5 @@
 body {
-  height: 98vh;
+  height: 120vh;
   margin-top: 0;
   margin-bottom: 0;
   display: flex;
@@ -11,6 +11,17 @@ h1 {
   margin: 0;
   padding: 2% 0;
   flex-shrink: 0;
+  text-align: center;
+  color: #445d97;
+  font-family: 'Gravitas One', cursive;
+}
+
+.introduction {
+margin-bottom: 10;
+padding: 0;
+flex-shrink: 0;
+text-align: center;
+background-color: #d5e8eb;
 }
 
 #map {
@@ -20,13 +31,13 @@ h1 {
 
 @media screen and (min-width: 1024px) {
   #map {
-    height: 70%;
+    height: 100%;
   }
 
 }
 @media screen and (max-width: 1024px) {
   #map {
-    height: 70%;
+    height: 100%;
   }
 }
 
@@ -74,7 +85,7 @@ h1 {
   text-decoration: none;
   display: inline-block;
   font-size: 15px;
-  margin: 4px 2px;
+  margin: 20px 0px 20px 0px;
   cursor: pointer;
 }
 .button:hover {
@@ -84,3 +95,30 @@ h1 {
 .button.active {
     background-color: #3862c2;
   }
+
+#batons { display: none } 
+
+  /* Style the footer */
+footer {
+  background-color: #d5e8eb;
+  padding: 5px;
+  margin-top: 10px;
+  text-align: center;
+  color: #445d97;
+}
+
+#logo {
+  width: 50px;
+  height: 100px;
+  margin: 0 0 5px;
+  float: left;
+  margin-top: 25px;
+}
+
+#batons {
+  font: 30px Arial, Helvetica, sans-serif;
+ }
+
+ #areaChart{
+   margin-top: 20px;
+ }

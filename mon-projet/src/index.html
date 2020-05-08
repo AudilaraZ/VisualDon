@@ -13,6 +13,9 @@
   <!-- mon css-->
   <link rel="stylesheet" type="text/css" href="../css/style.css" />
 
+  <!--Google Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+
   <link href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css" rel="stylesheet">
   <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
 
@@ -25,7 +28,17 @@
 </head>
 
 <body>
-  <h1>Causes de mortalité</h1>
+  <div id="top">
+    <!--Logo HEIG-VD-->
+      <img id="logo" src="logo.png">
+      <h1>Causes de mortalité</h1>
+  </div>
+  <div class="introduction">
+    <p>Dans ce site, il a été choisi d'examiner les trois plus mauvaises habitudes répandues dans monde: l'alcool, le tabac et les drogues.</br>
+      En tant que jeunes, des fois, on ne regarde pas ces thématiques avec le juste poids.</br>
+      Avec nos graphiques on aimerait donc montrer aux personnes de notre génération les terribles effets</br> 
+      de ces 3 mauvaises habitudes et leur faire changer d'avis, surtout sur le tabac.</p>
+  </div>
 
   <div id="selectButton">
     <button class="button active" type="button" value="deathAlcool">ALCOOL</button>
@@ -35,27 +48,37 @@
     <button class="button" type="button" value="deathYear">DE 1990 À 2017</button>
   </div>
 
-  <section id="map">
+  <section id="map">    
+    <!-- <div class="description"> NE MARCHE PAS  REGARDER DANS INDEX.JS
+      <p value="textAlcool">
+          Dans cette carte géographique, on remarque que les pays ayant un problème de mortalité par rapport avec l'alcool sont positionnés pour la majorité au nord-est de l'Europe.
+          Ces pays ont la réputation d'être de grands buveurs, mais aussi de grands producteurs de spiritueux comme vodka et eaux-de-vie de fruit.
+          Aussi dans les pays de l’Amérique centrale, il est possible de voir le même phénomène dû à la culture de la création de tequila et autre spiritueux. 
+      </p>
+      <p value="textTabac">Blabala</p>
+      <p value="textDrug"></p>
+      <p value="textAll"></p>
+      <p value="textdeathYear"></p> 
+    </div>  -->
     <!--Les cartes pour l'alcool, le tabac, la drogue et tous sont présentes ici.-->
   </section>
 
   <section id="batons">
     <div id="bar-chart-race">
       <button>Replay</button>
-        <!--SVG-->
-        <svg viewBox="0,0,954,232"><g fill-opacity="0.6"><rect fill="#4e79a7" height="63" x="0" y="23" width="948"></rect><rect fill="#f28e2c" height="63" x="0" y="93" width="33.238256059470885"></rect><rect fill="#e15759" height="63" x="0" y="163" width="21.02315089738611"></rect></g><g transform="translate(0,16)" fill="none" font-size="10" font-family="sans-serif" text-anchor="middle"><g class="tick" opacity="1" transform="translate(0.5,0)"><line stroke="currentColor" y2="217"></line></g><g class="tick" opacity="1" transform="translate(103.61597442626953, 0)"><line stroke="white" y2="217"></line><text fill="currentColor" y="-3" dy="0em">2,000</text></g><g class="tick" opacity="1" transform="translate(206.73194885253906, 0)"><line stroke="white" y2="217"></line><text fill="currentColor" y="-3" dy="0em">4,000</text></g><g class="tick" opacity="1" transform="translate(309.8479309082031, 0)"><line stroke="white" y2="217"></line><text fill="currentColor" y="-3" dy="0em">6,000</text></g><g class="tick" opacity="1" transform="translate(412.9638977050781, 0)"><line stroke="white" y2="217"></line><text fill="currentColor" y="-3" dy="0em">8,000</text></g><g class="tick" opacity="1" transform="translate(516.079833984375, 0)"><line stroke="white" y2="217"></line><text fill="currentColor" y="-3" dy="0em">10,000</text></g><g class="tick" opacity="1" transform="translate(619.1958618164062, 0)"><line stroke="white" y2="217"></line><text fill="currentColor" y="-3" dy="0em">12,000</text></g><g class="tick" opacity="1" transform="translate(722.3118286132812, 0)"><line stroke="white" y2="217"></line><text fill="currentColor" y="-3" dy="0em">14,000</text></g><g class="tick" opacity="1" transform="translate(825.4277954101562, 0)"><line stroke="white" y2="217"></line><text fill="currentColor" y="-3" dy="0em">16,000</text></g><g class="tick" opacity="1" transform="translate(928.5437622070312, 0)"><line stroke="white" y2="217"></line><text fill="currentColor" y="-3" dy="0em">18,000</text></g></g><g text-anchor="end" style="font-style: ; font-variant-caps: ; font-variant-ligatures: ; font-variant-numeric: tabular-nums; font-variant-east-asian: ; font-weight: ; font-stretch: ; font-size: ; line-height: ; font-family: ;"><text transform="translate(948,23)" y="31.5" x="-6" dy="-0.25em">Smoking<tspan fill-opacity="0.7" font-weight="normal" x="-6" dy="1.15em">18,387</tspan></text><text transform="translate(33.23825454711914, 93)" y="31.5" x="-6" dy="-0.25em">Alcohol<tspan fill-opacity="0.7" font-weight="normal" x="-6" dy="1.15em">645</tspan></text><text transform="translate(21.023151397705078, 163)" y="31.5" x="-6" dy="-0.25em">Drug<tspan fill-opacity="0.7" font-weight="normal" x="-6" dy="1.15em">408</tspan></text></g><text text-anchor="end" x="948" y="194.5" dy="0.32em" style="font-style: ; font-variant-caps: ; font-variant-ligatures: ; font-variant-numeric: tabular-nums; font-variant-east-asian: ; font-weight: ; font-stretch: ; font-size: ; line-height: ; font-family: ;">2017</text></svg>
       <!-- Graphique  avec les batons qui bougent bar chart race-->
-      <div id="observablehq-76018bc9"></div>
-      <!-- <script type="module">
-        import { Runtime, Inspector } from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-        import define from "https://api.observablehq.com/@michelle-po/bar-chart-race.js?v=3";
-        const inspect = Inspector.into("#observablehq-76018bc9");
-        (new Runtime).module(define, name => (name === "chart") && inspect());
-      </script> -->
-    </div>
+      <div id="observablehq-462b18f0"></div>
+      <script type="module">
+      import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+      import define from "https://api.observablehq.com/@michelle-po/bar-chart-race/2.js?v=3";
+      const inspect = Inspector.into("#observablehq-462b18f0");
+      (new Runtime).module(define, name => (name === "chart") && inspect());
+      </script>
     <div id="areaChart"></div> <!-- Graphique avec les montagnes area chart-->
   </section>
-
+  <footer>
+      <p>Site fait avec 💙 par Majka Voide, Michelle Ponti et Audrey Zeugin dans le cadre du cours de visualisation de données </p>
+    </footer>
 </body>
 <script src="index.js"></script>
 
