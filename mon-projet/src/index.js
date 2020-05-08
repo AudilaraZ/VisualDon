@@ -6,6 +6,8 @@ import L from 'leaflet'
 import "billboard.js/dist/theme/insight.css";
 import bb from "billboard.js";
 
+$('.description').hide();
+
 // la carte
 const map = L.map('map').setView([50, 0], 2);
 
@@ -127,6 +129,7 @@ const onButtonClick = e => {
     $(e.target).addClass('active')
 
     //On cache la carte ET les autres graphiques
+    $('.description').hide();
     $('#map').hide();
     $('#batons').hide();
 
@@ -134,6 +137,10 @@ const onButtonClick = e => {
     mapStyle = e.target.value
     // style des pays dépendant du bouton
     if (mapStyle === 'deathAlcool') {
+
+        //on affiche les descriptions
+        $('#texteAlcool').show();
+
         //on affiche la carte
         $('#map').show();
 
@@ -146,6 +153,10 @@ const onButtonClick = e => {
         legendAlcool.addTo(map)
     }
     if (mapStyle === 'deathDrug') {
+
+        // on affiche la description 
+        $('#texteDrug').show();
+
         //on affiche la carte
         $('#map').show();
 
@@ -158,6 +169,10 @@ const onButtonClick = e => {
         legendDrugs.addTo(map)
     }
     if (mapStyle === 'deathTabac') {
+
+        // on affiche la description
+        $('#texteTabac').show();
+
         //on affiche la carte
         $('#map').show();
 
@@ -170,6 +185,10 @@ const onButtonClick = e => {
         legendTabac.addTo(map)
     }
     if (mapStyle === 'deathAll') {
+
+        // on affiche la description
+        $('#texteAll').show();
+
         //on affiche la carte
         $('#map').show();
 
@@ -183,6 +202,10 @@ const onButtonClick = e => {
         legendAll.addTo(map)
     }
     if (mapStyle === 'deathYear') { // mettre le graphique en batons qui bougent et l'area chart
+        
+        //on affiche la description
+        $('#textedeathYear').show();
+
         // On affiche les graphiques 
         $('#batons').show();
         // on génère le graphique
@@ -345,6 +368,7 @@ legendAll.onAdd = function (map) {
 
 // Alcool par défaut, on ajoute la légende au chargement de la carte
 legendAlcool.addTo(map)
+$('#texteAlcool').show();
 
 
 //////////////////////////////////////////////// TEXTE ////////////////////////////////////////////////
