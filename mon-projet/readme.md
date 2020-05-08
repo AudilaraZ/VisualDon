@@ -44,7 +44,7 @@ https://github.com/AudilaraZ/VisualDon/tree/master/mon-projet
 
 ## Lien vers la visualisation publiée
 
-http://causes-mortalite.surge.sh
+http://causesmortalite.surge.sh
 
 ## **Pour recréer le site à partir de votre code**
 
